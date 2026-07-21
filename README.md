@@ -1,1 +1,1 @@
-# kg-embeddings-recommender
+# Knowledge Graph Embeddings-based Recommendation Engine
