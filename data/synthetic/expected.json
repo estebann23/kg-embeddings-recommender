@@ -1,0 +1,155 @@
+{
+  "description": "Hand-specified competency expectations for the synthetic RDF fixture, not relevance/ranking labels.",
+  "cases": [
+    {
+      "profile_id": "seed_profile_001",
+      "dish_id": "seed_dish_002",
+      "status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_001",
+      "dish_id": "seed_dish_003",
+      "status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_001",
+      "dish_id": "seed_dish_001",
+      "status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_001",
+      "status": "COMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_003",
+      "status": "COMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_007",
+      "status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_004",
+      "status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_008",
+      "status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_011",
+      "status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_003",
+      "dish_id": "seed_dish_009",
+      "status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_003",
+      "dish_id": "seed_dish_011",
+      "status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_004",
+      "dish_id": "seed_dish_003",
+      "status": "COMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_005",
+      "dish_id": "seed_dish_002",
+      "status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_005",
+      "dish_id": "seed_dish_012",
+      "status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_005",
+      "dish_id": "seed_dish_016",
+      "status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_006",
+      "dish_id": "seed_dish_006",
+      "status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_006",
+      "dish_id": "seed_dish_001",
+      "status": "COMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_007",
+      "dish_id": "seed_dish_007",
+      "status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_008",
+      "dish_id": "seed_dish_003",
+      "status": "INCOMPATIBLE"
+    }
+  ],
+  "cq1_vegan": [
+    "seed_dish_001",
+    "seed_dish_002",
+    "seed_dish_005",
+    "seed_dish_006",
+    "seed_dish_007",
+    "seed_dish_009",
+    "seed_dish_010",
+    "seed_dish_011",
+    "seed_dish_012",
+    "seed_dish_014",
+    "seed_dish_017",
+    "seed_dish_020"
+  ],
+  "profile2_unknown": [
+    "seed_dish_004",
+    "seed_dish_008",
+    "seed_dish_011",
+    "seed_dish_012",
+    "seed_dish_016"
+  ],
+  "profile2_compatible": [
+    "seed_dish_001",
+    "seed_dish_002",
+    "seed_dish_003",
+    "seed_dish_005",
+    "seed_dish_006",
+    "seed_dish_010",
+    "seed_dish_013",
+    "seed_dish_014",
+    "seed_dish_015",
+    "seed_dish_018",
+    "seed_dish_019",
+    "seed_dish_020"
+  ],
+  "profile2_incompatible": [
+    "seed_dish_007",
+    "seed_dish_009",
+    "seed_dish_017"
+  ],
+  "profile1_incompatible": [
+    "seed_dish_002",
+    "seed_dish_003",
+    "seed_dish_013",
+    "seed_dish_015",
+    "seed_dish_018",
+    "seed_dish_019"
+  ],
+  "profile2_restaurants": [
+    "seed_restaurant_001",
+    "seed_restaurant_002",
+    "seed_restaurant_003",
+    "seed_restaurant_004",
+    "seed_restaurant_005"
+  ]
+}

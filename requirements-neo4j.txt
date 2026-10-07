@@ -1,0 +1,3 @@
+# Install the existing project dependencies and .env configuration support.
+-r requirements.txt
+python-dotenv==1.2.1
