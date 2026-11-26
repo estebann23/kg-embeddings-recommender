@@ -22,6 +22,8 @@ results/NEO4J_IMPLEMENTATION_REPORT.txt
 
 *report.md
 
+.gitgnore
+
 data/raw/crawler_init
 data/raw/food_kg
 data/raw/hummus_data
