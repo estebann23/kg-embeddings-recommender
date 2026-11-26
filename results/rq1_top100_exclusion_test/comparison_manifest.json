@@ -1,0 +1,13 @@
+{
+  "status": "paired_comparisons_complete",
+  "model_pair_rows": 36,
+  "full_catalog_pair_rows": 24,
+  "prior_removed_exposure_rows": 8,
+  "new_evaluation_manifest_sha256": "78cabb362c600ce889f5700b0b645739e99d4a8c4b5804c170841acf615ff5fa",
+  "prior_accuracy_sha256": "398b6deefdb69e03d89c4507ae4c2442c9f5e1ba773afc6f624506f2073a1178",
+  "prior_taxonomy_accuracy_sha256": "d4270324966ca6b0bf631a9c126700a838707ffdba56fb4e9f9f1e2c65d1844d",
+  "prior_diversity_sha256": "055470b7dbf05cf6188b90f4f38e426f147383c66907f4916f4ff0b89bb40afa",
+  "paired_model_sha256": "4260c422b9e5fb30856fd5a8e9472161842d15b52ee9b5473bd8e33e3710a85f",
+  "paired_full_catalog_sha256": "f3c34969a07ff56c39259a34e3f518cbca9de5e86860756947196d906e5bec50",
+  "prior_removed_exposure_sha256": "48a5aab979bb71c15adfb54fb9140cfe8dcd2cf8988346f481647ba6b6d54774"
+}

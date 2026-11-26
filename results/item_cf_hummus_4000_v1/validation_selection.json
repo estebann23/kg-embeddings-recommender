@@ -1,0 +1,26 @@
+{
+  "status": "validation_selected_no_test_access",
+  "condition": "1_item_cf",
+  "selected_n": 5,
+  "grid": [
+    5,
+    10,
+    20
+  ],
+  "mean_validation_ndcg_at_10": {
+    "5": 0.0003921852513504324,
+    "10": 0.0003921852513504324,
+    "20": 0.0003921852513504324
+  },
+  "users_with_positive_validation": 3995,
+  "training_users": 4000,
+  "candidate_catalog": 75972,
+  "per_user_eligible_candidates": 75944,
+  "fit_manifest_sha256": "2cb2fb9d0e5b7fdba136634ba77fb1d7999548593ddefdf8d68214d9bccecb78",
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "validation_per_user_sha256": "1111efba668fb698a1fb552d01e059496b05771be20903a69b46a9ccad9cda92",
+  "validation_grid_recommendations_sha256": "aab7a1b1d344171504770bac6eb2ca3d65300107e2977cf9e47c2c7623a62354",
+  "validation_selected_recommendations_sha256": "00477774f89419d0f484e624abca319e72082c71da26cfbb6063d706d4b098bf",
+  "generated_utc": "2026-11-18T08:34:22.526393+00:00",
+  "note": "Selection used validation NDCG@10 only; no test rating was read."
+}

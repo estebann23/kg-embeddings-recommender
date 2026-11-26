@@ -1,0 +1,13 @@
+k,model_a,model_b,paired_users,mean_a_minus_b,wins_a,ties,wins_b
+10,1_item_cf,3_explicit_paths,3996,0.29856155376182181,3986,0,10
+10,1_item_cf,4_rotate_primary,3996,0.002521227829117437,2298,0,1698
+10,1_item_cf,4_rotate_hierarchy,3996,0.0036294313449822526,2289,0,1707
+10,3_explicit_paths,4_rotate_primary,4000,-0.29606123700247045,4,0,3996
+10,3_explicit_paths,4_rotate_hierarchy,4000,-0.29495915077047169,2,0,3998
+10,4_rotate_primary,4_rotate_hierarchy,4000,0.001102086231998641,2050,0,1950
+50,1_item_cf,3_explicit_paths,4000,0.23229244709468286,4000,0,0
+50,1_item_cf,4_rotate_primary,4000,0.0095043556910830683,3072,0,928
+50,1_item_cf,4_rotate_hierarchy,4000,0.0068160826048124391,2817,0,1183
+50,3_explicit_paths,4_rotate_primary,4000,-0.22278809140359984,0,0,4000
+50,3_explicit_paths,4_rotate_hierarchy,4000,-0.22547636448987074,0,0,4000
+50,4_rotate_primary,4_rotate_hierarchy,4000,-0.0026882730862705837,1537,0,2463

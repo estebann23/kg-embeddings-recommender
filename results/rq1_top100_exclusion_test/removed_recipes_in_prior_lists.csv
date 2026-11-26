@@ -1,0 +1,9 @@
+model,k,removed_recipe_exposure_positions,distinct_removed_recipes_exposed
+1_item_cf,10,77,13
+1_item_cf,50,1913,58
+3_explicit_paths,10,108,21
+3_explicit_paths,50,562,34
+4_rotate_primary,10,12,1
+4_rotate_primary,50,842,24
+4_rotate_hierarchy,10,0,0
+4_rotate_hierarchy,50,176,31

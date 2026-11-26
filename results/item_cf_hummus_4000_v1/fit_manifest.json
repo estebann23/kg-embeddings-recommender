@@ -1,0 +1,26 @@
+{
+  "status": "fitted_training_only",
+  "condition": "1_item_cf",
+  "dataset_id": "hummus_4000_v1",
+  "algorithm": "signed_rating_sparse_item_cosine_positive_part",
+  "training_users": 4000,
+  "training_ratings": 112000,
+  "catalog_recipes": 75972,
+  "nonzero_norm_items": 57407,
+  "observed_item_pairs": 1380065,
+  "positive_similarity_pairs": 1337968,
+  "rating_weights": {
+    "1": -1.0,
+    "2": -0.5,
+    "3": 0.0,
+    "4": 0.5,
+    "5": 1.0
+  },
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "reviews_sha256": "da64723ba731f26847eed39ee8530b8e6cd4471d4fd3dd613104d4bdd8d79e75",
+  "recipes_sha256": "2bb87aaaa7a87d0bf4a9ee7086073cc97203d85672f880021caa0549b040dc24",
+  "similarity_sha256": "2a8624bae7b8754327d0408d88ecc27c2b01e68501b367939d339e5fc0c3620b",
+  "popularity_sha256": "ecd8b8b52d348ccd52378f0d74e53b090b7a7893563531faa9e750dd0aade8fa",
+  "created_utc": "2026-11-18T08:33:42.178765+00:00",
+  "note": "No validation or test rating was used to fit item similarities or popularity."
+}

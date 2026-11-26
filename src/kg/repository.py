@@ -7,11 +7,10 @@ from src.kg.models import Entity, Evidence, GraphData, SemanticRelationship, val
 from src.kg.semantics import FP, relation_definitions
 
 
-MANAGED_BY = "food-preference-kg"
-
+MANAGED_BY = "recipe-recommendation-kg"
 
 class GraphRepository:
-    def __init__(self, connection, dataset_id: str = "synthetic_v1"):
+    def __init__(self, connection, dataset_id: str = "recipe_rdf_v2"):
         validate_id(dataset_id)
         self.connection = connection
         self.dataset_id = dataset_id
@@ -37,8 +36,8 @@ class GraphRepository:
                 if observation.semantic_uri in evidence_uris or observation.semantic_uri in entities:
                     raise ValueError("An evidence IRI cannot identify multiple graph records.")
                 evidence_uris.add(observation.semantic_uri)
-                if (observation.weight is not None) != (definition.kind == "soft"):
-                    raise ValueError("Only soft relationships require weights.")
+                if (observation.rating is not None) != (definition.predicate == "rated"):
+                    raise ValueError("Only RATED evidence requires an observed rating.")
                 if observation.evidence_state == "MAY_CONTAIN" and definition.predicate not in {"contains", "hasAllergen"}:
                     raise ValueError("MAY_CONTAIN is only ingredient/allergen evidence.")
         self.connection.write_transaction(self._load_transaction, data)
@@ -50,15 +49,16 @@ class GraphRepository:
             node_groups[entity.label].append(entity.as_row(self.dataset_id))
         for label, rows in node_groups.items():
             collisions = tx.run(
-                f"UNWIND $rows AS row MATCH (n:{label} {{id: row.id}}) "
-                "WHERE coalesce(n.managed_by, '') <> $owner OR coalesce(n.dataset_id, '') <> $dataset_id "
-                "OR n.semantic_uri <> row.properties.semantic_uri RETURN n.id AS id",
+                "UNWIND $rows AS row MATCH (n:RecipeRecommendationKG {dataset_id: $dataset_id, id: row.id}) "
+                f"WHERE NOT n:{label} OR coalesce(n.managed_by, '') <> $owner "
+                "OR coalesce(n.semantic_uri, '') <> row.properties.semantic_uri RETURN n.id AS id",
                 rows=rows, owner=MANAGED_BY, dataset_id=self.dataset_id,
             ).data()
             if collisions:
                 raise ValueError("Existing entity identity belongs to a different import; no data was changed.")
-            tx.run(f"UNWIND $rows AS row MERGE (n:{label} {{id: row.id}}) SET n:FoodPreferenceKG SET n = row.properties",
-                   rows=rows).consume()
+            tx.run(f"UNWIND $rows AS row MERGE (n:RecipeRecommendationKG {{dataset_id: $dataset_id, id: row.id}}) "
+                   f"SET n:{label} SET n = row.properties",
+                   rows=rows, dataset_id=self.dataset_id).consume()
         relationship_groups = defaultdict(list)
         evidence_rows = []
         definitions = relation_definitions()
@@ -80,25 +80,25 @@ class GraphRepository:
                 }
                 if observation.source_text is not None:
                     properties["source_text"] = observation.source_text
-                if observation.weight is not None:
-                    properties["weight"] = observation.weight
+                if observation.rating is not None:
+                    properties["rating"] = observation.rating
                 evidence_rows.append({"id": observation.id, "properties": properties})
         collisions = tx.run(
-            "UNWIND $rows AS row MATCH (e:EvidenceRecord {id: row.id}) "
-            "WHERE coalesce(e.managed_by, '') <> $owner OR coalesce(e.dataset_id, '') <> $dataset_id "
-            "OR e.semantic_uri <> row.properties.semantic_uri OR e.relationship_id <> row.properties.relationship_id RETURN e.id AS id",
+            "UNWIND $rows AS row MATCH (e:EvidenceRecord:RecipeRecommendationKG {dataset_id: $dataset_id, id: row.id}) "
+            "WHERE coalesce(e.managed_by, '') <> $owner OR coalesce(e.semantic_uri, '') <> row.properties.semantic_uri "
+            "OR coalesce(e.relationship_id, '') <> row.properties.relationship_id RETURN e.id AS id",
             rows=evidence_rows, owner=MANAGED_BY, dataset_id=self.dataset_id,
         ).data()
         if collisions:
             raise ValueError("An evidence identity belongs to a different relationship/import.")
-        tx.run("UNWIND $rows AS row MERGE (e:EvidenceRecord {id: row.id}) SET e:FoodPreferenceKG SET e = row.properties",
-               rows=evidence_rows).consume()
+        tx.run("UNWIND $rows AS row MERGE (e:EvidenceRecord:RecipeRecommendationKG {dataset_id: $dataset_id, id: row.id}) "
+               "SET e = row.properties", rows=evidence_rows, dataset_id=self.dataset_id).consume()
         for relationship_type, rows in relationship_groups.items():
             count = tx.run(
-                "UNWIND $rows AS row MATCH (s:FoodPreferenceKG {semantic_uri: row.source_uri}) "
-                "WITH row, s MATCH (t:FoodPreferenceKG {semantic_uri: row.target_uri}) "
+                "UNWIND $rows AS row MATCH (s:RecipeRecommendationKG {dataset_id: $dataset_id, semantic_uri: row.source_uri}) "
+                "WITH row, s MATCH (t:RecipeRecommendationKG {dataset_id: $dataset_id, semantic_uri: row.target_uri}) "
                 f"MERGE (s)-[r:{relationship_type} {{id: row.id}}]->(t) SET r = row.properties RETURN count(r) AS count",
-                rows=rows,
+                rows=rows, dataset_id=self.dataset_id,
             ).single()["count"]
             if count != len(rows):
                 raise ValueError("Relationship endpoint lookup failed; rolling back the import.")
@@ -131,7 +131,7 @@ class GraphRepository:
             if values["source_uri"] != relationship["source_uri"] or values["target_uri"] != relationship["target_uri"] or values["rdf_predicate"] != relationship["properties"]["rdf_predicate"]:
                 raise ValueError("Evidence record endpoints/predicate disagree with their semantic relationship.")
             observations[values["relationship_id"]].append(Evidence(values["id"], values["semantic_uri"], values["evidence_state"],
-                tuple(values["source"]), values.get("source_text"), values.get("weight")))
+                tuple(values["source"]), values.get("source_text"), values.get("rating")))
         entities = []
         for row in node_rows:
             values = dict(row["properties"])
@@ -156,7 +156,7 @@ class GraphRepository:
 
     def reset_development_graph(self, *, confirm: bool = False) -> None:
         """Delete only this loader-owned development dataset, never the database."""
-        if not confirm or self.dataset_id not in {"synthetic_v1", "ontology_example"}:
+        if not confirm or self.dataset_id != "recipe_rdf_v2":
             raise ValueError("Reset requires deliberate confirmation and a known development dataset.")
-        self.connection.write("MATCH (n:FoodPreferenceKG {dataset_id: $dataset_id, managed_by: $owner}) DETACH DELETE n",
+        self.connection.write("MATCH (n:RecipeRecommendationKG {dataset_id: $dataset_id, managed_by: $owner}) DETACH DELETE n",
                               dataset_id=self.dataset_id, owner=MANAGED_BY)

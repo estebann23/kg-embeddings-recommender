@@ -1,0 +1,12 @@
+{
+  "status": "hierarchy_test_rankings_complete",
+  "users": 4000,
+  "rows": 200000,
+  "fallback_top50_rows": 0,
+  "scorable_candidates_per_user": 74027,
+  "weight_five": 0.75,
+  "ranking_sha256": "288b388f630a7bcc1445970ec510d8395be1bc66dcb5731ae24f68563afcafef",
+  "preflight_sha256": "b5b192e8813961e62700b0ca7e6a367157c79a2ccd0e8f095073c4fa978f0de6",
+  "model_sha256": "4ed61dce63d04f4e0ce284b1bfa60f51b88986b1e06f396ea23310ec4906c771",
+  "generated_utc": "2026-11-18T10:01:27.593039+00:00"
+}

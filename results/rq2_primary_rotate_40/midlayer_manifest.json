@@ -1,0 +1,37 @@
+{
+  "status": "rq2_kg_compatibility_complete",
+  "catalog_recipes": 75972,
+  "graph_ingredient_edges": 586292,
+  "recipes_with_graph_ingredients": 65984,
+  "recipes_with_reconciled_declared_lists": 32203,
+  "profile_status_counts": {
+    "1": {
+      "UNKNOWN": 32183,
+      "INCOMPATIBLE": 36925,
+      "COMPATIBLE": 6864
+    },
+    "2": {
+      "UNKNOWN": 62633,
+      "COMPATIBLE": 11445,
+      "INCOMPATIBLE": 1894
+    },
+    "3": {
+      "UNKNOWN": 55192,
+      "INCOMPATIBLE": 6351,
+      "COMPATIBLE": 14429
+    },
+    "4": {
+      "UNKNOWN": 57442,
+      "COMPATIBLE": 15638,
+      "INCOMPATIBLE": 2892
+    },
+    "5": {
+      "UNKNOWN": 58576,
+      "COMPATIBLE": 15689,
+      "INCOMPATIBLE": 1707
+    }
+  },
+  "classification_sha256": "fd6f11fdf02ccd558791e970e93a33a69efff8b4a174312946e4c7bc05ffa863",
+  "candidate_coverage_sha256": "175cea885c239676b603875a6f301e036383b3c176f205acd403d1ac7952fe6a",
+  "preflight_sha256": "3b3330048c2221328a44e89a92753bdb0f0841cd9409d910bf771f51ce99203d"
+}

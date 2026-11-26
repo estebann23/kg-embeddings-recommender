@@ -1,0 +1,19 @@
+{
+  "status": "taxonomy_test_accuracy_complete",
+  "users": 4000,
+  "conditions": [
+    "4_rotate_primary",
+    "4_rotate_hierarchy"
+  ],
+  "k": [
+    10,
+    50
+  ],
+  "preflight_sha256": "b5b192e8813961e62700b0ca7e6a367157c79a2ccd0e8f095073c4fa978f0de6",
+  "rank_manifest_sha256": "a48614d416d02f73db304809d0f42ba4965b331e91042a23af046ef8ca75f02a",
+  "prior_evaluation_manifest_sha256": "d4f77f9a2ca5f632196e61e6bc86fe6de6c4c17a14255aacdd22d13da6718ba0",
+  "per_user_accuracy_sha256": "d4270324966ca6b0bf631a9c126700a838707ffdba56fb4e9f9f1e2c65d1844d",
+  "aggregate_accuracy_sha256": "071b1bdd4e0e4a55ac013d0ada20af545646dd691033cbea705eb6e5a5958603",
+  "paired_differences_sha256": "180d0f5efcbc3ecd31e86c1d4bf3a2707b051a36bf410942a9b9de02bc257e4d",
+  "created_utc": "2026-11-18T10:06:49.417159+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_semantic_mf_training",
+  "dataset_id": "hummus_4000_v1",
+  "condition": "supplementary_mf_ingredient_direct_foodon",
+  "seed": 2026,
+  "inputs": ["observed training ratings 1-5", "audited recipe-to-mapped-ingredient links", "audited ingredient-to-direct-FoodOn links"],
+  "excluded_inputs": ["FoodOn hierarchy or taxonomy", "nutrition", "recipe text", "test ratings", "validation ratings during fitting"],
+  "prediction": "global mean + user bias + recipe bias + user factor dot (free recipe factor + alpha*(0.5 mean mapped-ingredient factor + 0.5 mean direct-FoodOn factor))",
+  "empty_feature_policy": "an empty family mean is the zero vector; never infer ingredient absence",
+  "training_objective": "observed-entry mean squared error plus regularization on indexed user/free-item factors, user/item biases, and mean ingredient/concept representations",
+  "optimizer": "Adam",
+  "learning_rate": 0.01,
+  "batch_size": 4096,
+  "factors": 16,
+  "grid": {"content_scale": [0.5, 1.0], "regularization": [0.01, 0.1], "checkpoint_epochs": [10, 20]},
+  "selection": "highest mean validation NDCG@10 over users with a positive validation target; ties lower clipped validation RMSE, lower content scale, greater regularization, earlier epoch",
+  "ranking": "full 75972 catalog minus each user's 28 train recipes; any recipe with a train rating or a supervised ingredient/direct concept factor is scoreable; other recipes follow as fallback by train-positive popularity then numeric recipe ID",
+  "output_top_k": 50,
+  "boundary": "retrospective supplementary semantic MF comparison against the interaction-only MF baseline; validation-selected with no new test access"
+}

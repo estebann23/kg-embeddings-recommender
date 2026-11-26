@@ -1,0 +1,184 @@
+{
+  "status": "preflight_passed_before_split_test_metrics",
+  "dataset_id": "hummus_4000_v1",
+  "models": [
+    "interaction_only_cf",
+    "weighted_graph_paths",
+    "semantic_mf",
+    "rotate_primary",
+    "rotate_foodon_taxonomy"
+  ],
+  "populations": [
+    "random_50",
+    "semantic_50",
+    "exact_ingredient",
+    "direct_foodon_only",
+    "foodon_parent_only",
+    "no_observed_overlap",
+    "insufficient_ingredient_mapping"
+  ],
+  "validation": {
+    "interaction_only_cf": {
+      "selection_sha256": "18af9a791fa59998ee6f51461f44ed9f629e456c52d12d4462cab466474cdacc",
+      "selected": {
+        "neighbor_n": 5
+      },
+      "grid": {
+        "5": 0.0003921852513504324,
+        "10": 0.0003921852513504324,
+        "20": 0.0003921852513504324
+      }
+    },
+    "weighted_graph_paths": {
+      "selection_sha256": "769e583c5a8853e0373b39fedbfc25076659e8c9fb161534811f4bafbc41f3c3",
+      "selected": {
+        "beta": 0.5
+      },
+      "grid": {
+        "0.0": 0.0003470546759154697,
+        "0.25": 0.0004758698991772646,
+        "0.5": 0.0005620931101195234
+      }
+    },
+    "semantic_mf": {
+      "selection_sha256": "4a47935d407c2a33b0c89daab2a1246aedc059cda977006a25dffa26b334a477",
+      "selected": {
+        "factors": 16,
+        "content_scale": 0.5,
+        "regularization": 0.01,
+        "epoch": 10
+      },
+      "grid": [
+        {
+          "content_scale": 0.5,
+          "regularization": 0.01,
+          "epoch": 10,
+          "factors": 16,
+          "training_objective": 0.029306830787232944,
+          "validation_rmse_clipped": 0.6358380053889798,
+          "validation_mean_ndcg_at_10": 0.0007595366142271382,
+          "users_with_positive_validation": 3995,
+          "scoreable_recipes": 74054
+        },
+        {
+          "content_scale": 0.5,
+          "regularization": 0.01,
+          "epoch": 20,
+          "factors": 16,
+          "training_objective": 0.02135126747403826,
+          "validation_rmse_clipped": 0.6353401389462828,
+          "validation_mean_ndcg_at_10": 0.000755090239093061,
+          "users_with_positive_validation": 3995,
+          "scoreable_recipes": 74054
+        },
+        {
+          "content_scale": 0.5,
+          "regularization": 0.1,
+          "epoch": 10,
+          "factors": 16,
+          "training_objective": 0.1391673494066511,
+          "validation_rmse_clipped": 0.6163589404893571,
+          "validation_mean_ndcg_at_10": 0.00018890887804714487,
+          "users_with_positive_validation": 3995,
+          "scoreable_recipes": 74054
+        },
+        {
+          "content_scale": 0.5,
+          "regularization": 0.1,
+          "epoch": 20,
+          "factors": 16,
+          "training_objective": 0.12505446657112668,
+          "validation_rmse_clipped": 0.6196742785633682,
+          "validation_mean_ndcg_at_10": 5.393585795487974e-05,
+          "users_with_positive_validation": 3995,
+          "scoreable_recipes": 74054
+        },
+        {
+          "content_scale": 1.0,
+          "regularization": 0.01,
+          "epoch": 10,
+          "factors": 16,
+          "training_objective": 0.029615819203002113,
+          "validation_rmse_clipped": 0.6369387357964148,
+          "validation_mean_ndcg_at_10": 0.0005151441075489417,
+          "users_with_positive_validation": 3995,
+          "scoreable_recipes": 74054
+        },
+        {
+          "content_scale": 1.0,
+          "regularization": 0.01,
+          "epoch": 20,
+          "factors": 16,
+          "training_objective": 0.021381722079856055,
+          "validation_rmse_clipped": 0.635680477480769,
+          "validation_mean_ndcg_at_10": 0.0005789926029489831,
+          "users_with_positive_validation": 3995,
+          "scoreable_recipes": 74054
+        },
+        {
+          "content_scale": 1.0,
+          "regularization": 0.1,
+          "epoch": 10,
+          "factors": 16,
+          "training_objective": 0.13760412469932012,
+          "validation_rmse_clipped": 0.6165070502604051,
+          "validation_mean_ndcg_at_10": 0.00011588886977482876,
+          "users_with_positive_validation": 3995,
+          "scoreable_recipes": 74054
+        },
+        {
+          "content_scale": 1.0,
+          "regularization": 0.1,
+          "epoch": 20,
+          "factors": 16,
+          "training_objective": 0.12367038129057203,
+          "validation_rmse_clipped": 0.6196973538483694,
+          "validation_mean_ndcg_at_10": 2.3096818514644637e-05,
+          "users_with_positive_validation": 3995,
+          "scoreable_recipes": 74054
+        }
+      ]
+    },
+    "rotate_primary": {
+      "selection_sha256": "6c38e2f67f9c5831a32a6bb33bb0c450811793a6106da57e61df27e23f433b3f",
+      "selected": {
+        "weight_five": 0.5
+      },
+      "grid": {
+        "0.0": 0.0070622820722168805,
+        "0.25": 0.007132892849413375,
+        "0.5": 0.007160095695939666,
+        "0.75": 0.007047311953503993,
+        "1.0": 0.006577977714524513
+      }
+    },
+    "rotate_foodon_taxonomy": {
+      "selection_sha256": "d3a0c5eb13a88291ddd287797eb31d9d9ec0c47d316466216eb23d556be144d5",
+      "selected": {
+        "weight_five": 0.75
+      },
+      "grid": {
+        "0.0": 0.006389460524682407,
+        "0.25": 0.006938717414201221,
+        "0.5": 0.007135054720306464,
+        "0.75": 0.0072711568307264295,
+        "1.0": 0.006802375278104789
+      }
+    }
+  },
+  "config_sha256": "2f5ea357660558f954eca7954ee6b2c0845f5ebddef61517125035bdc3a737c5",
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "reviews_sha256": "da64723ba731f26847eed39ee8530b8e6cd4471d4fd3dd613104d4bdd8d79e75",
+  "recipes_sha256": "2bb87aaaa7a87d0bf4a9ee7086073cc97203d85672f880021caa0549b040dc24",
+  "split_manifest_sha256": "3530e11cad2e4e0845dd410ef9d1a6ddb0ca73a3f7376bb398bc670a643b9625",
+  "split_assignments_sha256": "9a95ff526f609dbc996d02731ad0fb394cd86f917df633f03c9ffef5949fc837",
+  "ranking_sha256": {
+    "interaction_only_cf": "ac26a8f40da0547bc06dcb74c4030e9f641965bd6b6861249db51fb469277a33",
+    "weighted_graph_paths": "eb9d6bbd77be3987743d1a050e6dfdab446c66815a74bc6446dce3bc250769ac",
+    "semantic_mf": "019986dc1eec94cf7226b5739d4d1b20cbf2c9da72d99735ae4b1dfd07cb0109",
+    "rotate_primary": "e7e0ca9585b7469df0625ea2baf8d8c7db509935cd269613fe093935867e8e89",
+    "rotate_foodon_taxonomy": "288b388f630a7bcc1445970ec510d8395be1bc66dcb5731ae24f68563afcafef"
+  },
+  "validation_grid_sha256": "8ad60eb4b98f5e8cbfebb98ee07ca4b965de2d52d1d5df98aefd608f9eadedc4",
+  "created_utc": "2026-11-25T14:53:43.656339+00:00"
+}

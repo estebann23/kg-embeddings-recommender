@@ -1,0 +1,19 @@
+population,condition,metric,users,mean,sum_hits,users_with_hit,positive_targets,definition
+positive_test_users,1_item_cf,precision_at_10,4000,0.00067500000000000025,27,27,30270,mean per-user observed positive hits / K
+positive_test_users,1_item_cf,precision_at_50,4000,0.00062000000000000043,124,122,30270,mean per-user observed positive hits / K
+positive_test_users,1_item_cf,ndcg_at_10,4000,0.00091548143177336543,27,27,30270,"mean per-user DCG / ideal DCG using observed test gains 0,0,0,1,2"
+positive_test_users,1_item_cf,ndcg_at_50,4000,0.0021783936255432299,124,122,30270,"mean per-user DCG / ideal DCG using observed test gains 0,0,0,1,2"
+positive_test_users,3_explicit_paths,precision_at_10,4000,0.00055000000000000014,22,22,30270,mean per-user observed positive hits / K
+positive_test_users,3_explicit_paths,precision_at_50,4000,0.00047500000000000032,95,94,30270,mean per-user observed positive hits / K
+positive_test_users,3_explicit_paths,ndcg_at_10,4000,0.00062113605170524664,22,22,30270,"mean per-user DCG / ideal DCG using observed test gains 0,0,0,1,2"
+positive_test_users,3_explicit_paths,ndcg_at_50,4000,0.0016410842815441288,95,94,30270,"mean per-user DCG / ideal DCG using observed test gains 0,0,0,1,2"
+positive_test_users,4_rotate_primary,precision_at_10,4000,0.0074500000000000321,298,284,30270,mean per-user observed positive hits / K
+positive_test_users,4_rotate_primary,precision_at_50,4000,0.0051099999999999228,1022,844,30270,mean per-user observed positive hits / K
+positive_test_users,4_rotate_primary,ndcg_at_10,4000,0.009745000105103898,298,284,30270,"mean per-user DCG / ideal DCG using observed test gains 0,0,0,1,2"
+positive_test_users,4_rotate_primary,ndcg_at_50,4000,0.019771130073534079,1022,844,30270,"mean per-user DCG / ideal DCG using observed test gains 0,0,0,1,2"
+all_users,1_item_cf,precision_at_10,4000,0.00067500000000000025,27,27,30270,mean per-user observed positive hits / K
+all_users,1_item_cf,precision_at_50,4000,0.00062000000000000043,124,122,30270,mean per-user observed positive hits / K
+all_users,3_explicit_paths,precision_at_10,4000,0.00055000000000000014,22,22,30270,mean per-user observed positive hits / K
+all_users,3_explicit_paths,precision_at_50,4000,0.00047500000000000032,95,94,30270,mean per-user observed positive hits / K
+all_users,4_rotate_primary,precision_at_10,4000,0.0074500000000000321,298,284,30270,mean per-user observed positive hits / K
+all_users,4_rotate_primary,precision_at_50,4000,0.0051099999999999228,1022,844,30270,mean per-user observed positive hits / K

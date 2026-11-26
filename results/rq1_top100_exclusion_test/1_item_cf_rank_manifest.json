@@ -1,0 +1,12 @@
+{
+  "status": "reduced_catalog_ranking_complete",
+  "model": "1_item_cf",
+  "users": 4000,
+  "rows": 200000,
+  "fallback_rows": 47,
+  "min_scorable_candidates": 26,
+  "max_scorable_candidates": 12049,
+  "ranking_sha256": "065968a4a3f6ab4271f013b550532fda9ba6d7307650ef21f877d7f36187fd2a",
+  "preflight_sha256": "1bf3e3558a63f6d0ce89017d06bdf00d3213aef7164eb4a7889bb071b418263c",
+  "created_utc": "2026-11-18T10:44:38.121361+00:00"
+}

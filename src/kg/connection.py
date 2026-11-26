@@ -1,4 +1,5 @@
-"""Load Neo4j settings without logging credentials."""
+# Load Neo4j settings
+
 import os
 import logging
 from pathlib import Path

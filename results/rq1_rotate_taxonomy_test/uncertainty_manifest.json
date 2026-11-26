@@ -1,0 +1,10 @@
+{
+  "status": "paired_bootstrap_complete",
+  "users": 4000,
+  "replicates": 5000,
+  "seed": 2026,
+  "per_user_accuracy_sha256": "d4270324966ca6b0bf631a9c126700a838707ffdba56fb4e9f9f1e2c65d1844d",
+  "intervals_sha256": "19d61f2272dd5d1449ffdc110b201f1a1095d13fcaf6f1c8f96dbf2ce9f1ac3b",
+  "created_utc": "2026-11-18T10:07:58.770916+00:00",
+  "interpretation": "Descriptive user-resampling intervals for a fixed post-test comparison; no model selection."
+}

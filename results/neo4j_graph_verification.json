@@ -1,0 +1,710 @@
+{
+  "dataset_id": "synthetic_v1",
+  "counts": {
+    "nodes": [
+      {
+        "label": "Allergen",
+        "count": 6
+      },
+      {
+        "label": "Cuisine",
+        "count": 5
+      },
+      {
+        "label": "DietaryPattern",
+        "count": 4
+      },
+      {
+        "label": "Dish",
+        "count": 20
+      },
+      {
+        "label": "EvidenceRecord",
+        "count": 237
+      },
+      {
+        "label": "HealthGoal",
+        "count": 2
+      },
+      {
+        "label": "HealthRestriction",
+        "count": 2
+      },
+      {
+        "label": "Ingredient",
+        "count": 26
+      },
+      {
+        "label": "Restaurant",
+        "count": 5
+      },
+      {
+        "label": "Taste",
+        "count": 5
+      },
+      {
+        "label": "UserProfile",
+        "count": 8
+      }
+    ],
+    "relationships": [
+      {
+        "type": "ALLERGIC_TO",
+        "count": 3
+      },
+      {
+        "type": "COMPATIBLE_WITH_DIET",
+        "count": 56
+      },
+      {
+        "type": "CONTAINS",
+        "count": 60
+      },
+      {
+        "type": "DISLIKES_INGREDIENT",
+        "count": 2
+      },
+      {
+        "type": "EXCLUDES_ALLERGEN",
+        "count": 2
+      },
+      {
+        "type": "EXCLUDES_INGREDIENT",
+        "count": 13
+      },
+      {
+        "type": "FOLLOWS_DIET",
+        "count": 2
+      },
+      {
+        "type": "HAS_ALLERGEN",
+        "count": 7
+      },
+      {
+        "type": "HAS_CUISINE",
+        "count": 20
+      },
+      {
+        "type": "HAS_TASTE",
+        "count": 20
+      },
+      {
+        "type": "INCOMPATIBLE_WITH_DIET",
+        "count": 13
+      },
+      {
+        "type": "LIKES_INGREDIENT",
+        "count": 4
+      },
+      {
+        "type": "MUST_AVOID",
+        "count": 1
+      },
+      {
+        "type": "OFFERS",
+        "count": 20
+      },
+      {
+        "type": "PREFERS_CUISINE",
+        "count": 4
+      },
+      {
+        "type": "PREFERS_HEALTH_GOAL",
+        "count": 1
+      },
+      {
+        "type": "PREFERS_TASTE",
+        "count": 4
+      },
+      {
+        "type": "REQUIRES_DIET",
+        "count": 2
+      },
+      {
+        "type": "REQUIRES_HEALTH_GOAL",
+        "count": 1
+      },
+      {
+        "type": "REQUIRES_HEALTH_RESTRICTION",
+        "count": 1
+      }
+    ],
+    "evidence_states": [
+      {
+        "state": "CONFIRMED",
+        "count": 230
+      },
+      {
+        "state": "INFERRED",
+        "count": 4
+      },
+      {
+        "state": "MAY_CONTAIN",
+        "count": 2
+      },
+      {
+        "state": "UNKNOWN",
+        "count": 1
+      }
+    ],
+    "relationship_evidence_states": [
+      {
+        "state": "CONFIRMED",
+        "count": 230
+      },
+      {
+        "state": "INFERRED",
+        "count": 3
+      },
+      {
+        "state": "MAY_CONTAIN",
+        "count": 2
+      },
+      {
+        "state": "UNKNOWN",
+        "count": 1
+      }
+    ]
+  },
+  "competency_questions_passed": [
+    "CQ1",
+    "CQ2",
+    "CQ3",
+    "CQ4",
+    "CQ5",
+    "CQ6",
+    "CQ7",
+    "CQ8",
+    "CQ9",
+    "CQ10"
+  ],
+  "examples": [
+    {
+      "profile_id": "seed_profile_001",
+      "dish_id": "seed_dish_002",
+      "status": "INCOMPATIBLE",
+      "actual_status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_001",
+      "dish_id": "seed_dish_003",
+      "status": "INCOMPATIBLE",
+      "actual_status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_001",
+      "dish_id": "seed_dish_001",
+      "status": "UNKNOWN",
+      "actual_status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_001",
+      "status": "COMPATIBLE",
+      "actual_status": "COMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_003",
+      "status": "COMPATIBLE",
+      "actual_status": "COMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_007",
+      "status": "INCOMPATIBLE",
+      "actual_status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_004",
+      "status": "UNKNOWN",
+      "actual_status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_008",
+      "status": "UNKNOWN",
+      "actual_status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_002",
+      "dish_id": "seed_dish_011",
+      "status": "UNKNOWN",
+      "actual_status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_003",
+      "dish_id": "seed_dish_009",
+      "status": "INCOMPATIBLE",
+      "actual_status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_003",
+      "dish_id": "seed_dish_011",
+      "status": "UNKNOWN",
+      "actual_status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_004",
+      "dish_id": "seed_dish_003",
+      "status": "COMPATIBLE",
+      "actual_status": "COMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_005",
+      "dish_id": "seed_dish_002",
+      "status": "INCOMPATIBLE",
+      "actual_status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_005",
+      "dish_id": "seed_dish_012",
+      "status": "UNKNOWN",
+      "actual_status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_005",
+      "dish_id": "seed_dish_016",
+      "status": "UNKNOWN",
+      "actual_status": "UNKNOWN"
+    },
+    {
+      "profile_id": "seed_profile_006",
+      "dish_id": "seed_dish_006",
+      "status": "INCOMPATIBLE",
+      "actual_status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_006",
+      "dish_id": "seed_dish_001",
+      "status": "COMPATIBLE",
+      "actual_status": "COMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_007",
+      "dish_id": "seed_dish_007",
+      "status": "INCOMPATIBLE",
+      "actual_status": "INCOMPATIBLE"
+    },
+    {
+      "profile_id": "seed_profile_008",
+      "dish_id": "seed_dish_003",
+      "status": "INCOMPATIBLE",
+      "actual_status": "INCOMPATIBLE"
+    }
+  ],
+  "candidate_counts": {
+    "seed_profile_001": {
+      "COMPATIBLE": 0,
+      "INCOMPATIBLE": 6,
+      "UNKNOWN": 14
+    },
+    "seed_profile_002": {
+      "COMPATIBLE": 12,
+      "INCOMPATIBLE": 3,
+      "UNKNOWN": 5
+    },
+    "seed_profile_003": {
+      "COMPATIBLE": 0,
+      "INCOMPATIBLE": 1,
+      "UNKNOWN": 19
+    },
+    "seed_profile_004": {
+      "COMPATIBLE": 20,
+      "INCOMPATIBLE": 0,
+      "UNKNOWN": 0
+    },
+    "seed_profile_005": {
+      "COMPATIBLE": 0,
+      "INCOMPATIBLE": 1,
+      "UNKNOWN": 19
+    },
+    "seed_profile_006": {
+      "COMPATIBLE": 14,
+      "INCOMPATIBLE": 1,
+      "UNKNOWN": 5
+    },
+    "seed_profile_007": {
+      "COMPATIBLE": 12,
+      "INCOMPATIBLE": 3,
+      "UNKNOWN": 5
+    },
+    "seed_profile_008": {
+      "COMPATIBLE": 14,
+      "INCOMPATIBLE": 1,
+      "UNKNOWN": 5
+    }
+  },
+  "representative_positive_path": {
+    "profile_id": "seed_profile_004",
+    "dish_id": "seed_dish_013",
+    "value_id": "taste_savory",
+    "preference_type": "PREFERS_TASTE",
+    "effect": "positive",
+    "weights": [
+      0.6
+    ],
+    "path": [
+      {
+        "relationship_id": "1d060de48a394d3af7f70636063fc4a045813e5dbfe54f0c3f05bdc4eefe37c4",
+        "relationship_type": "PREFERS_TASTE",
+        "source_id": "seed_profile_004",
+        "target_id": "taste_savory",
+        "observations": [
+          {
+            "id": "seed_statement_0016",
+            "semantic_uri": "https://github.com/estebann23/kg-embeddings-recommender/entity/seed_statement_0016",
+            "evidence_state": "CONFIRMED",
+            "source": [
+              "urn:fixture:synthetic-v1"
+            ],
+            "source_text": null,
+            "weight": 0.6
+          }
+        ]
+      },
+      {
+        "relationship_id": "7f9b035093dc0e98c9393e1bae0bd80b4e059658b3d7743073c8618be7858506",
+        "relationship_type": "HAS_TASTE",
+        "source_id": "seed_dish_013",
+        "target_id": "taste_savory",
+        "observations": [
+          {
+            "id": "seed_statement_0165",
+            "semantic_uri": "https://github.com/estebann23/kg-embeddings-recommender/entity/seed_statement_0165",
+            "evidence_state": "CONFIRMED",
+            "source": [
+              "urn:fixture:synthetic-v1"
+            ],
+            "source_text": null,
+            "weight": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "b6e2735fd34510e00d4bdf0586c601a3cf065ed7c6ff4606a3b77249e1572cb1",
+        "relationship_type": "OFFERS",
+        "source_id": "seed_restaurant_004",
+        "target_id": "seed_dish_013",
+        "observations": [
+          {
+            "id": "seed_statement_0163",
+            "semantic_uri": "https://github.com/estebann23/kg-embeddings-recommender/entity/seed_statement_0163",
+            "evidence_state": "CONFIRMED",
+            "source": [
+              "urn:fixture:synthetic-v1"
+            ],
+            "source_text": null,
+            "weight": null
+          }
+        ]
+      }
+    ],
+    "composition_complete": true,
+    "node_evidence": [
+      {
+        "entity_id": "seed_dish_013",
+        "property": "composition_complete",
+        "value": true,
+        "source": [
+          "urn:fixture:synthetic-v1"
+        ]
+      }
+    ],
+    "restaurant_id": "seed_restaurant_004"
+  },
+  "representative_allergy_conflict": {
+    "outcome": "INCOMPATIBLE",
+    "constraint_type": "ALLERGY",
+    "profile_relation": "ALLERGIC_TO",
+    "dish_id": "seed_dish_002",
+    "reason": "ingredient-to-allergen evidence",
+    "path": [
+      {
+        "relationship_id": "816937beb81c782e446dcd5c07a434a624c069dc248352578f90df3fbdb936e3",
+        "relationship_type": "ALLERGIC_TO",
+        "source_id": "seed_profile_005",
+        "target_id": "allergen_tree_nut",
+        "observations": [
+          {
+            "id": "seed_statement_0021",
+            "semantic_uri": "https://github.com/estebann23/kg-embeddings-recommender/entity/seed_statement_0021",
+            "evidence_state": "CONFIRMED",
+            "source": [
+              "urn:fixture:synthetic-v1"
+            ],
+            "source_text": null,
+            "weight": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "5e4a9c499d388d40b1152ed8d759161abdbc09934eb2ab45976376f7ce117de5",
+        "relationship_type": "CONTAINS",
+        "source_id": "seed_dish_002",
+        "target_id": "ingredient_cashew",
+        "observations": [
+          {
+            "id": "seed_statement_0063",
+            "semantic_uri": "https://github.com/estebann23/kg-embeddings-recommender/entity/seed_statement_0063",
+            "evidence_state": "CONFIRMED",
+            "source": [
+              "urn:fixture:synthetic-v1"
+            ],
+            "source_text": "Synthetic recipe explicitly lists cashew.",
+            "weight": null
+          },
+          {
+            "id": "seed_statement_0237",
+            "semantic_uri": "https://github.com/estebann23/kg-embeddings-recommender/entity/seed_statement_0237",
+            "evidence_state": "INFERRED",
+            "source": [
+              "urn:fixture:synthetic-v1-second-source"
+            ],
+            "source_text": "A second synthetic observation has not been verified.",
+            "weight": null
+          }
+        ]
+      },
+      {
+        "relationship_id": "008df4903a8d6a9f2b5b212184ba62bdce554612f5751d920a68abff21d203aa",
+        "relationship_type": "HAS_ALLERGEN",
+        "source_id": "ingredient_cashew",
+        "target_id": "allergen_tree_nut",
+        "observations": [
+          {
+            "id": "seed_statement_0041",
+            "semantic_uri": "https://github.com/estebann23/kg-embeddings-recommender/entity/seed_statement_0041",
+            "evidence_state": "CONFIRMED",
+            "source": [
+              "urn:fixture:synthetic-v1"
+            ],
+            "source_text": null,
+            "weight": null
+          }
+        ]
+      }
+    ],
+    "ingredient_id": "ingredient_cashew",
+    "allergen_id": "allergen_tree_nut"
+  },
+  "evidence_limit": "Allergen absence is not represented by the existing ontology; unresolved allergy clearance remains UNKNOWN.",
+  "final_verification": {
+    "verified_at_utc": "2026-10-06T22:08:42.498789+00:00",
+    "full_suite": {
+      "tests": 63,
+      "ontology": 23,
+      "unit": 21,
+      "integration": 19,
+      "success": true
+    },
+    "reset_rebuild_and_cq_rerun": true,
+    "direct_cypher_positive_path": [
+      {
+        "profile_id": "seed_profile_004",
+        "taste_id": "taste_savory",
+        "dish_id": "seed_dish_013",
+        "restaurant_id": "seed_restaurant_004",
+        "relationship_ids": [
+          "1d060de48a394d3af7f70636063fc4a045813e5dbfe54f0c3f05bdc4eefe37c4",
+          "7f9b035093dc0e98c9393e1bae0bd80b4e059658b3d7743073c8618be7858506",
+          "b6e2735fd34510e00d4bdf0586c601a3cf065ed7c6ff4606a3b77249e1572cb1"
+        ],
+        "states": [
+          "CONFIRMED",
+          "CONFIRMED",
+          "CONFIRMED"
+        ]
+      }
+    ],
+    "direct_cypher_negative_path": [
+      {
+        "profile_id": "seed_profile_005",
+        "allergen_id": "allergen_tree_nut",
+        "ingredient_id": "ingredient_cashew",
+        "dish_id": "seed_dish_002",
+        "relationship_ids": [
+          "816937beb81c782e446dcd5c07a434a624c069dc248352578f90df3fbdb936e3",
+          "5e4a9c499d388d40b1152ed8d759161abdbc09934eb2ab45976376f7ce117de5",
+          "008df4903a8d6a9f2b5b212184ba62bdce554612f5751d920a68abff21d203aa"
+        ],
+        "states": [
+          "CONFIRMED",
+          "CONFIRMED",
+          "CONFIRMED"
+        ],
+        "composition_observations": [
+          "https://github.com/estebann23/kg-embeddings-recommender/entity/seed_statement_0063",
+          "https://github.com/estebann23/kg-embeddings-recommender/entity/seed_statement_0237"
+        ]
+      }
+    ],
+    "ontology_example_counts": {
+      "nodes": [
+        {
+          "label": "Allergen",
+          "count": 1
+        },
+        {
+          "label": "Cuisine",
+          "count": 1
+        },
+        {
+          "label": "DietaryPattern",
+          "count": 1
+        },
+        {
+          "label": "Dish",
+          "count": 4
+        },
+        {
+          "label": "EvidenceRecord",
+          "count": 28
+        },
+        {
+          "label": "HealthGoal",
+          "count": 1
+        },
+        {
+          "label": "HealthRestriction",
+          "count": 1
+        },
+        {
+          "label": "Ingredient",
+          "count": 4
+        },
+        {
+          "label": "Restaurant",
+          "count": 1
+        },
+        {
+          "label": "Taste",
+          "count": 1
+        },
+        {
+          "label": "UserProfile",
+          "count": 2
+        }
+      ],
+      "relationships": [
+        {
+          "type": "ALLERGIC_TO",
+          "count": 1
+        },
+        {
+          "type": "COMPATIBLE_WITH_DIET",
+          "count": 1
+        },
+        {
+          "type": "CONTAINS",
+          "count": 4
+        },
+        {
+          "type": "DISLIKES_INGREDIENT",
+          "count": 1
+        },
+        {
+          "type": "EXCLUDES_ALLERGEN",
+          "count": 1
+        },
+        {
+          "type": "EXCLUDES_INGREDIENT",
+          "count": 3
+        },
+        {
+          "type": "FOLLOWS_DIET",
+          "count": 1
+        },
+        {
+          "type": "HAS_ALLERGEN",
+          "count": 1
+        },
+        {
+          "type": "HAS_CUISINE",
+          "count": 1
+        },
+        {
+          "type": "HAS_TASTE",
+          "count": 1
+        },
+        {
+          "type": "INCOMPATIBLE_WITH_DIET",
+          "count": 1
+        },
+        {
+          "type": "LIKES_INGREDIENT",
+          "count": 1
+        },
+        {
+          "type": "MUST_AVOID",
+          "count": 1
+        },
+        {
+          "type": "OFFERS",
+          "count": 4
+        },
+        {
+          "type": "PREFERS_CUISINE",
+          "count": 1
+        },
+        {
+          "type": "PREFERS_HEALTH_GOAL",
+          "count": 1
+        },
+        {
+          "type": "PREFERS_TASTE",
+          "count": 1
+        },
+        {
+          "type": "REQUIRES_DIET",
+          "count": 1
+        },
+        {
+          "type": "REQUIRES_HEALTH_GOAL",
+          "count": 1
+        },
+        {
+          "type": "REQUIRES_HEALTH_RESTRICTION",
+          "count": 1
+        }
+      ],
+      "evidence_states": [
+        {
+          "state": "CONFIRMED",
+          "count": 27
+        },
+        {
+          "state": "INFERRED",
+          "count": 1
+        }
+      ],
+      "relationship_evidence_states": [
+        {
+          "state": "CONFIRMED",
+          "count": 27
+        },
+        {
+          "state": "INFERRED",
+          "count": 1
+        }
+      ]
+    },
+    "server": [
+      {
+        "name": "Neo4j Kernel",
+        "versions": [
+          "2026.09.0"
+        ]
+      },
+      {
+        "name": "Cypher",
+        "versions": [
+          "5",
+          "25"
+        ]
+      }
+    ],
+    "ontology_source_hashes_unchanged": true
+  }
+}

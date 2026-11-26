@@ -1,5 +1,5 @@
-"""Read semantic definitions from the existing ontology and mapping document."""
-from dataclasses import dataclass
+#~Read semantic definitions from the existing ontology and the mapping document
+
 from functools import lru_cache
 from pathlib import Path
 import re
@@ -58,7 +58,7 @@ def relation_definitions() -> dict[str, RelationDefinition]:
         target = str(graph.value(predicate, RDFS.range)).removeprefix(str(FP))
         kind = str(graph.value(predicate, FP.constraintKind))
         domain_names = frozenset(str(node).removeprefix(str(FP)) for node in domains)
-        if not domain_names <= set(domain_labels()) or target not in domain_labels() or kind not in {"hard", "soft", "fact", "rule"}:
+        if not domain_names <= set(domain_labels()) or target not in domain_labels() or kind not in {"hard", "fact", "rule"}:
             raise ValueError("Invalid object-property definition.")
         result[mapping[name]] = RelationDefinition(name, mapping[name], domain_names, target, kind)
     return result

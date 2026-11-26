@@ -1,0 +1,21 @@
+{
+  "status": "diversity_exposure_complete",
+  "models": [
+    "1_item_cf",
+    "3_explicit_paths",
+    "4_rotate_primary",
+    "4_rotate_hierarchy"
+  ],
+  "k": [
+    10,
+    50
+  ],
+  "users": 4000,
+  "catalog_recipes": 75972,
+  "preflight_sha256": "c00840b7b606aa1d3b08355bb01efdf42bc7b5eb322e8bbbb6bf6e920d422b63",
+  "per_user_ingredient_diversity_sha256": "055470b7dbf05cf6188b90f4f38e426f147383c66907f4916f4ff0b89bb40afa",
+  "aggregate_diversity_exposure_sha256": "b560cd52ac501ac732e370024d3347ff53171fe037f02b1ddc7373a66e3eff63",
+  "recipe_exposure_sha256": "110c3cb19f550be0f4bc8c9652c3d8a64063dfbdce6c679796407b6462418627",
+  "paired_ingredient_ild_differences_sha256": "ea76bff892f7a802b4e1b24f01552b2d7f58f0f5259b4af008848a27a1e1707e",
+  "created_utc": "2026-11-18T10:22:44.862817+00:00"
+}

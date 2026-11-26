@@ -1,0 +1,18 @@
+{
+  "status": "test_blind_rankings_complete",
+  "condition": "4_rotate_primary",
+  "users": 4000,
+  "rows": 200000,
+  "fallback_top50_rows": 0,
+  "scorable_candidates_min": 74027,
+  "scorable_candidates_max": 74027,
+  "ranking_sha256": "e7e0ca9585b7469df0625ea2baf8d8c7db509935cd269613fe093935867e8e89",
+  "preflight_sha256": "cd19b7fe66c913632644816c0af0e3f59d3095d12a49533554e52a244c3e1d1e",
+  "source_sha256": {
+    "training_manifest": "a27a050f506c38f8132ce515226f29eb491358b13fe6a7b8ad7e270dd5ffc398",
+    "validation_selection": "6c38e2f67f9c5831a32a6bb33bb0c450811793a6106da57e61df27e23f433b3f",
+    "model": "36caa963b553933958df674b1cb39e1be62f3472d1de918bb99e13fdd1af39c1"
+  },
+  "generated_utc": "2026-11-18T09:41:35.697826+00:00",
+  "note": "Ranking generated from training, static features and validation-selected parameters only."
+}

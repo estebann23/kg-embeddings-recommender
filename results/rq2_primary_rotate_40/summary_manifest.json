@@ -1,0 +1,11 @@
+{
+  "status": "rq2_summary_verified",
+  "users": 40,
+  "test_targets": 320,
+  "positive_test_targets": 313,
+  "compatible_positive_test_targets": 62,
+  "observed_positive_hits_at_10": 0,
+  "aggregate_sha256": "679080fbf7897346ea56c8b4fba51a3fe7afacc64e1735aabc4a0420379f995e",
+  "target_eligibility_sha256": "3d766ec199af9c067245943023a6e3c06f8fa9f2fbf4885e0570720ee9b9a700",
+  "evaluation_manifest_sha256": "e8fbb7afc6bc7208118b6a19c7e2589dc804251c9c6ea4771b26b6389c322bdb"
+}

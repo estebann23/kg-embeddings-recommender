@@ -1,0 +1,12 @@
+{
+  "status": "reduced_catalog_ranking_complete",
+  "model": "4_rotate_hierarchy",
+  "users": 4000,
+  "rows": 200000,
+  "fallback_rows": 0,
+  "min_scorable_candidates": 73927,
+  "max_scorable_candidates": 73931,
+  "ranking_sha256": "f9b5538e9c850dcb4a53980c2b3c858ce97a88248029396abdbee9bb59b65d5a",
+  "preflight_sha256": "1bf3e3558a63f6d0ce89017d06bdf00d3213aef7164eb4a7889bb071b418263c",
+  "created_utc": "2026-11-18T10:47:04.202319+00:00"
+}

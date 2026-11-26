@@ -1,0 +1,30 @@
+{
+  "status": "validation_selected_no_test_access",
+  "condition": "2_item_cf_attributes",
+  "selected_alpha": 0.0,
+  "selected_n_from_condition_1": 5,
+  "grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "mean_validation_ndcg_at_10": {
+    "0.0": 0.0003921852513504324,
+    "0.25": 0.00021000577746477575,
+    "0.5": 0.00021000577746477575,
+    "0.75": 0.00021000577746477575
+  },
+  "users_with_positive_validation": 3995,
+  "training_users": 4000,
+  "candidate_catalog": 75972,
+  "per_user_eligible_candidates": 75944,
+  "fit_manifest_sha256": "da4d9cb42d2b35bbef10a4e699ab719f36c142338d00cd22a94e0e5a8eea40e8",
+  "base_validation_selection_sha256": "18af9a791fa59998ee6f51461f44ed9f629e456c52d12d4462cab466474cdacc",
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "validation_per_user_sha256": "0d5fc501b23c37b7887164f9322562ef53558688e14735a9fbd58d2072e24567",
+  "validation_grid_recommendations_sha256": "18c15cb699ef6475ed3911b9e66e89ec9e2a39c619b50ce8dace16baa038ff76",
+  "validation_selected_recommendations_sha256": "873cc2f7e1ad89f8779ae41fd73e371668b5fa51dbc29ac108f4ebebd111adc9",
+  "generated_utc": "2026-11-18T08:54:35.781055+00:00",
+  "note": "Validation-selected alpha only. Alpha=0 reproduces condition 1; no test rating was read."
+}

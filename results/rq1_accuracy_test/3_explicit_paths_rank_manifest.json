@@ -1,0 +1,17 @@
+{
+  "status": "test_blind_rankings_complete",
+  "condition": "3_explicit_paths",
+  "users": 4000,
+  "rows": 200000,
+  "fallback_top50_rows": 0,
+  "scorable_candidates_min": 56282,
+  "scorable_candidates_max": 65405,
+  "ranking_sha256": "eb9d6bbd77be3987743d1a050e6dfdab446c66815a74bc6446dce3bc250769ac",
+  "preflight_sha256": "cd19b7fe66c913632644816c0af0e3f59d3095d12a49533554e52a244c3e1d1e",
+  "source_sha256": {
+    "fit_manifest": "bba4d44a77dc372d337e003cded0df036e0f97b3fe02fcba35b44fe144c5340e",
+    "validation_selection": "769e583c5a8853e0373b39fedbfc25076659e8c9fb161534811f4bafbc41f3c3"
+  },
+  "generated_utc": "2026-11-18T09:38:37.422443+00:00",
+  "note": "Ranking generated from training, static features and validation-selected parameters only."
+}

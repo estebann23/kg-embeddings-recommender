@@ -6,198 +6,132 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
 fp:EntityShape a sh:NodeShape ;
-    sh:targetClass fp:UserProfile, fp:Restaurant, fp:Dish, fp:Ingredient,
-        fp:Cuisine, fp:Taste, fp:DietaryPattern, fp:Allergen,
-        fp:HealthRestriction, fp:HealthGoal ;
+    sh:targetClass fp:ObservedUser, fp:ScenarioProfile, fp:Recipe, fp:Ingredient,
+        fp:FoodOnConcept, fp:DietaryPattern, fp:Allergen ;
     sh:nodeKind sh:IRI ;
-    sh:property [
-        sh:path rdfs:label ; sh:minCount 1 ; sh:pattern "\\S" ;
-        sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ;
-        sh:message "Every domain entity needs a nonblank literal name (rdfs:label)."
-    ] .
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:pattern "\\S" ;
+        sh:or ( [ sh:datatype xsd:string ] [ sh:datatype rdf:langString ] ) ] .
 
-fp:DishShape a sh:NodeShape ; sh:targetClass fp:Dish ;
-    sh:property [
-        sh:path [ sh:inversePath fp:offers ] ; sh:minCount 1 ;
-        sh:class fp:Restaurant ;
-        sh:message "Every dish must be offered by at least one typed restaurant."
-    ] ;
-    sh:property [
-        sh:path fp:compositionComplete ; sh:maxCount 1 ; sh:datatype xsd:boolean ;
-        sh:message "Composition completeness must be one boolean value when supplied."
-    ] ;
-    sh:sparql [
-        sh:message "A dish cannot have both positive and negative assessments for the same diet." ;
+fp:RecipeShape a sh:NodeShape ; sh:targetClass fp:Recipe ;
+    sh:property [ sh:path fp:compositionComplete ; sh:maxCount 1 ; sh:datatype xsd:boolean ] ;
+    sh:property [ sh:path fp:servingSizeGrams ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path fp:calories ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path fp:totalFatGrams ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path fp:saturatedFatGrams ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path fp:cholesterolMilligrams ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path fp:sodiumMilligrams ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path fp:carbohydrateGrams ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path fp:dietaryFiberGrams ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path fp:sugarsGrams ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path fp:proteinGrams ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:sparql [ sh:message "A recipe cannot have both positive and negative assessments for one diet." ;
         sh:select """
             PREFIX fp: <https://github.com/estebann23/kg-embeddings-recommender/ontology/food_preferences#>
-            SELECT $this WHERE {
-                $this fp:compatibleWithDiet ?diet ; fp:incompatibleWithDiet ?diet .
-            }
-        """
-    ] .
+            SELECT $this WHERE { $this fp:compatibleWithDiet ?diet ; fp:incompatibleWithDiet ?diet . }
+        """ ] .
 
-# Explicit class checks: do not use RDFS inference to repair invalid targets.
+fp:RecipeNutritionSubjectShape a sh:NodeShape ;
+    sh:targetSubjectsOf fp:servingSizeGrams, fp:calories, fp:totalFatGrams,
+        fp:saturatedFatGrams, fp:cholesterolMilligrams, fp:sodiumMilligrams,
+        fp:carbohydrateGrams, fp:dietaryFiberGrams, fp:sugarsGrams,
+        fp:proteinGrams, fp:compositionComplete ;
+    sh:class fp:Recipe .
 
-fp:followsDietShape a sh:NodeShape ; sh:targetSubjectsOf fp:followsDiet ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:followsDiet ; sh:nodeKind sh:IRI ; sh:class fp:DietaryPattern ;
-        sh:message "followsDiet must point to a typed DietaryPattern entity." ] .
+fp:ScenarioProfileShape a sh:NodeShape ; sh:targetClass fp:ScenarioProfile ;
+    sh:property [ sh:path fp:scenarioFor ; sh:minCount 1 ; sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ; sh:class fp:ObservedUser ] ;
+    sh:or (
+        [ sh:property [ sh:path fp:requiresDiet ; sh:minCount 1 ] ]
+        [ sh:property [ sh:path fp:allergicTo ; sh:minCount 1 ] ]
+        [ sh:property [ sh:path fp:mustAvoid ; sh:minCount 1 ] ]
+    ) .
 
-fp:requiresDietShape a sh:NodeShape ; sh:targetSubjectsOf fp:requiresDiet ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:requiresDiet ; sh:nodeKind sh:IRI ; sh:class fp:DietaryPattern ;
-        sh:message "requiresDiet must point to a typed DietaryPattern entity." ] .
+fp:ratedShape a sh:NodeShape ; sh:targetSubjectsOf fp:rated ;
+    sh:class fp:ObservedUser ;
+    sh:property [ sh:path fp:rated ; sh:nodeKind sh:IRI ; sh:class fp:Recipe ] .
 
-fp:allergicToShape a sh:NodeShape ; sh:targetSubjectsOf fp:allergicTo ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:allergicTo ; sh:nodeKind sh:IRI ; sh:class fp:Allergen ;
-        sh:message "allergicTo must point to a typed Allergen entity." ] .
-
-fp:mustAvoidShape a sh:NodeShape ; sh:targetSubjectsOf fp:mustAvoid ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:mustAvoid ; sh:nodeKind sh:IRI ; sh:class fp:Ingredient ;
-        sh:message "mustAvoid must point to a typed Ingredient entity." ] .
-
-fp:likesIngredientShape a sh:NodeShape ; sh:targetSubjectsOf fp:likesIngredient ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:likesIngredient ; sh:nodeKind sh:IRI ; sh:class fp:Ingredient ;
-        sh:message "likesIngredient must point to a typed Ingredient entity." ] .
-
-fp:dislikesIngredientShape a sh:NodeShape ; sh:targetSubjectsOf fp:dislikesIngredient ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:dislikesIngredient ; sh:nodeKind sh:IRI ; sh:class fp:Ingredient ;
-        sh:message "dislikesIngredient must point to a typed Ingredient entity." ] .
-
-fp:prefersCuisineShape a sh:NodeShape ; sh:targetSubjectsOf fp:prefersCuisine ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:prefersCuisine ; sh:nodeKind sh:IRI ; sh:class fp:Cuisine ;
-        sh:message "prefersCuisine must point to a typed Cuisine entity." ] .
-
-fp:prefersTasteShape a sh:NodeShape ; sh:targetSubjectsOf fp:prefersTaste ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:prefersTaste ; sh:nodeKind sh:IRI ; sh:class fp:Taste ;
-        sh:message "prefersTaste must point to a typed Taste entity." ] .
-
-fp:requiresHealthRestrictionShape a sh:NodeShape ; sh:targetSubjectsOf fp:requiresHealthRestriction ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:requiresHealthRestriction ; sh:nodeKind sh:IRI ; sh:class fp:HealthRestriction ;
-        sh:message "requiresHealthRestriction must point to a typed HealthRestriction entity." ] .
-
-fp:prefersHealthGoalShape a sh:NodeShape ; sh:targetSubjectsOf fp:prefersHealthGoal ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:prefersHealthGoal ; sh:nodeKind sh:IRI ; sh:class fp:HealthGoal ;
-        sh:message "prefersHealthGoal must point to a typed HealthGoal entity." ] .
-
-fp:requiresHealthGoalShape a sh:NodeShape ; sh:targetSubjectsOf fp:requiresHealthGoal ;
-    sh:class fp:UserProfile ;
-    sh:property [ sh:path fp:requiresHealthGoal ; sh:nodeKind sh:IRI ; sh:class fp:HealthGoal ;
-        sh:message "requiresHealthGoal must point to a typed HealthGoal entity." ] .
-
-fp:offersShape a sh:NodeShape ; sh:targetSubjectsOf fp:offers ;
-    sh:class fp:Restaurant ;
-    sh:property [ sh:path fp:offers ; sh:nodeKind sh:IRI ; sh:class fp:Dish ;
-        sh:message "offers must point to a typed Dish entity." ] .
+fp:scenarioForShape a sh:NodeShape ; sh:targetSubjectsOf fp:scenarioFor ;
+    sh:class fp:ScenarioProfile ;
+    sh:property [ sh:path fp:scenarioFor ; sh:nodeKind sh:IRI ; sh:class fp:ObservedUser ] .
 
 fp:containsShape a sh:NodeShape ; sh:targetSubjectsOf fp:contains ;
-    sh:class fp:Dish ;
-    sh:property [ sh:path fp:contains ; sh:nodeKind sh:IRI ; sh:class fp:Ingredient ;
-        sh:message "contains must point to a typed Ingredient entity." ] .
+    sh:class fp:Recipe ;
+    sh:property [ sh:path fp:contains ; sh:nodeKind sh:IRI ; sh:class fp:Ingredient ] .
 
-fp:hasCuisineShape a sh:NodeShape ; sh:targetSubjectsOf fp:hasCuisine ;
-    sh:class fp:Dish ;
-    sh:property [ sh:path fp:hasCuisine ; sh:nodeKind sh:IRI ; sh:class fp:Cuisine ;
-        sh:message "hasCuisine must point to a typed Cuisine entity." ] .
+fp:mapsToFoodOnShape a sh:NodeShape ; sh:targetSubjectsOf fp:mapsToFoodOn ;
+    sh:class fp:Ingredient ;
+    sh:property [ sh:path fp:mapsToFoodOn ; sh:nodeKind sh:IRI ; sh:class fp:FoodOnConcept ] .
 
-fp:hasTasteShape a sh:NodeShape ; sh:targetSubjectsOf fp:hasTaste ;
-    sh:class fp:Dish ;
-    sh:property [ sh:path fp:hasTaste ; sh:nodeKind sh:IRI ; sh:class fp:Taste ;
-        sh:message "hasTaste must point to a typed Taste entity." ] .
+fp:foodOnSubClassOfShape a sh:NodeShape ; sh:targetSubjectsOf fp:foodOnSubClassOf ;
+    sh:class fp:FoodOnConcept ;
+    sh:property [ sh:path fp:foodOnSubClassOf ; sh:nodeKind sh:IRI ; sh:class fp:FoodOnConcept ] .
+
+fp:requiresDietShape a sh:NodeShape ; sh:targetSubjectsOf fp:requiresDiet ;
+    sh:class fp:ScenarioProfile ;
+    sh:property [ sh:path fp:requiresDiet ; sh:nodeKind sh:IRI ; sh:class fp:DietaryPattern ] .
+
+fp:allergicToShape a sh:NodeShape ; sh:targetSubjectsOf fp:allergicTo ;
+    sh:class fp:ScenarioProfile ;
+    sh:property [ sh:path fp:allergicTo ; sh:nodeKind sh:IRI ; sh:class fp:Allergen ] .
+
+fp:mustAvoidShape a sh:NodeShape ; sh:targetSubjectsOf fp:mustAvoid ;
+    sh:class fp:ScenarioProfile ;
+    sh:property [ sh:path fp:mustAvoid ; sh:nodeKind sh:IRI ; sh:class fp:Ingredient ] .
 
 fp:hasAllergenShape a sh:NodeShape ; sh:targetSubjectsOf fp:hasAllergen ;
     sh:class fp:Ingredient ;
-    sh:property [ sh:path fp:hasAllergen ; sh:nodeKind sh:IRI ; sh:class fp:Allergen ;
-        sh:message "hasAllergen must point to a typed Allergen entity." ] .
+    sh:property [ sh:path fp:hasAllergen ; sh:nodeKind sh:IRI ; sh:class fp:Allergen ] .
 
 fp:excludesIngredientShape a sh:NodeShape ; sh:targetSubjectsOf fp:excludesIngredient ;
-    sh:or ( [ sh:class fp:DietaryPattern ] [ sh:class fp:HealthRestriction ] [ sh:class fp:HealthGoal ] ) ;
-    sh:property [ sh:path fp:excludesIngredient ; sh:nodeKind sh:IRI ; sh:class fp:Ingredient ;
-        sh:message "excludesIngredient must point to a typed Ingredient entity." ] .
+    sh:class fp:DietaryPattern ;
+    sh:property [ sh:path fp:excludesIngredient ; sh:nodeKind sh:IRI ; sh:class fp:Ingredient ] .
 
 fp:excludesAllergenShape a sh:NodeShape ; sh:targetSubjectsOf fp:excludesAllergen ;
-    sh:or ( [ sh:class fp:DietaryPattern ] [ sh:class fp:HealthRestriction ] [ sh:class fp:HealthGoal ] ) ;
-    sh:property [ sh:path fp:excludesAllergen ; sh:nodeKind sh:IRI ; sh:class fp:Allergen ;
-        sh:message "excludesAllergen must point to a typed Allergen entity." ] .
+    sh:class fp:DietaryPattern ;
+    sh:property [ sh:path fp:excludesAllergen ; sh:nodeKind sh:IRI ; sh:class fp:Allergen ] .
 
 fp:compatibleWithDietShape a sh:NodeShape ; sh:targetSubjectsOf fp:compatibleWithDiet ;
-    sh:class fp:Dish ;
-    sh:property [ sh:path fp:compatibleWithDiet ; sh:nodeKind sh:IRI ; sh:class fp:DietaryPattern ;
-        sh:message "compatibleWithDiet must point to a typed DietaryPattern entity." ] .
+    sh:class fp:Recipe ;
+    sh:property [ sh:path fp:compatibleWithDiet ; sh:nodeKind sh:IRI ; sh:class fp:DietaryPattern ] .
 
 fp:incompatibleWithDietShape a sh:NodeShape ; sh:targetSubjectsOf fp:incompatibleWithDiet ;
-    sh:class fp:Dish ;
-    sh:property [ sh:path fp:incompatibleWithDiet ; sh:nodeKind sh:IRI ; sh:class fp:DietaryPattern ;
-        sh:message "incompatibleWithDiet must point to a typed DietaryPattern entity." ] .
+    sh:class fp:Recipe ;
+    sh:property [ sh:path fp:incompatibleWithDiet ; sh:nodeKind sh:IRI ; sh:class fp:DietaryPattern ] .
 
 fp:StatementShape a sh:NodeShape ;
     sh:targetClass rdf:Statement ;
-    sh:targetSubjectsOf fp:preferenceWeight, fp:evidenceState, fp:sourceText ;
+    sh:targetSubjectsOf fp:evidenceState, fp:sourceText, fp:ratingValue ;
     sh:class rdf:Statement ; sh:nodeKind sh:IRI ;
     sh:property [ sh:path rdf:subject ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
     sh:property [ sh:path rdf:predicate ; sh:minCount 1 ; sh:maxCount 1 ;
-        sh:in (fp:followsDiet fp:requiresDiet fp:allergicTo fp:mustAvoid fp:likesIngredient fp:dislikesIngredient fp:prefersCuisine fp:prefersTaste fp:requiresHealthRestriction fp:prefersHealthGoal fp:requiresHealthGoal fp:offers fp:contains fp:hasCuisine fp:hasTaste fp:hasAllergen fp:excludesIngredient fp:excludesAllergen fp:compatibleWithDiet fp:incompatibleWithDiet) ] ;
+        sh:in (fp:rated fp:scenarioFor fp:contains fp:mapsToFoodOn fp:foodOnSubClassOf fp:requiresDiet fp:allergicTo fp:mustAvoid fp:hasAllergen fp:excludesIngredient fp:excludesAllergen fp:compatibleWithDiet fp:incompatibleWithDiet) ] ;
     sh:property [ sh:path rdf:object ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
-    sh:property [
-        sh:path fp:evidenceState ; sh:minCount 1 ; sh:maxCount 1 ;
-        sh:datatype xsd:string ;
-        sh:in ("CONFIRMED" "INFERRED" "MAY_CONTAIN" "UNKNOWN") ;
-        sh:message "Statement evidence must be CONFIRMED, INFERRED, MAY_CONTAIN, or UNKNOWN."
-    ] ;
-    sh:property [
-        sh:path dcterms:source ; sh:minCount 1 ;
-        sh:or ( [ sh:nodeKind sh:IRI ] [ sh:datatype xsd:string ; sh:pattern "\\S" ] ) ;
-        sh:message "Each statement needs a source identifier or reference."
-    ] ;
+    sh:property [ sh:path fp:evidenceState ; sh:minCount 1 ; sh:maxCount 1 ;
+        sh:datatype xsd:string ; sh:in ("CONFIRMED" "INFERRED" "MAY_CONTAIN" "UNKNOWN") ] ;
+    sh:property [ sh:path dcterms:source ; sh:minCount 1 ;
+        sh:or ( [ sh:nodeKind sh:IRI ] [ sh:datatype xsd:string ; sh:pattern "\\S" ] ) ] ;
     sh:property [ sh:path fp:sourceText ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
-    sh:property [
-        sh:path fp:preferenceWeight ; sh:maxCount 1 ; sh:datatype xsd:decimal ;
-        sh:minInclusive 0.0 ; sh:maxInclusive 1.0 ;
-        sh:message "Preference weights must be decimal values from 0 to 1."
-    ] ;
-    sh:sparql [
-        sh:message "A statement must describe an existing direct relationship triple." ;
+    sh:property [ sh:path fp:ratingValue ; sh:maxCount 1 ; sh:datatype xsd:integer ;
+        sh:minInclusive 1 ; sh:maxInclusive 5 ] ;
+    sh:sparql [ sh:message "Statement must describe an existing direct relationship triple." ;
         sh:select """
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             SELECT $this WHERE {
                 $this rdf:subject ?s ; rdf:predicate ?p ; rdf:object ?o .
                 FILTER NOT EXISTS { ?s ?p ?o . }
             }
-        """
-    ] ;
-    sh:sparql [
-        sh:message "Every soft preference statement requires a weight." ;
+        """ ] ;
+    sh:sparql [ sh:message "Only rated statements have a required 1–5 rating." ;
         sh:select """
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX fp: <https://github.com/estebann23/kg-embeddings-recommender/ontology/food_preferences#>
             SELECT $this WHERE {
                 $this rdf:predicate ?p .
-                FILTER (?p IN (fp:followsDiet, fp:likesIngredient, fp:dislikesIngredient, fp:prefersCuisine, fp:prefersTaste, fp:prefersHealthGoal))
-                FILTER NOT EXISTS { $this fp:preferenceWeight ?w . }
+                OPTIONAL { $this fp:ratingValue ?rating . }
+                FILTER ((?p = fp:rated && !BOUND(?rating)) || (?p != fp:rated && BOUND(?rating)))
             }
-        """
-    ] ;
-    sh:sparql [
-        sh:message "Weights are allowed only on soft preferences, never on hard restrictions or facts." ;
-        sh:select """
-            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-            PREFIX fp: <https://github.com/estebann23/kg-embeddings-recommender/ontology/food_preferences#>
-            SELECT $this WHERE {
-                $this rdf:predicate ?p ; fp:preferenceWeight ?w .
-                FILTER (?p NOT IN (fp:followsDiet, fp:likesIngredient, fp:dislikesIngredient, fp:prefersCuisine, fp:prefersTaste, fp:prefersHealthGoal))
-            }
-        """
-    ] ;
-    sh:sparql [
-        sh:message "MAY_CONTAIN is reserved for possible ingredient or allergen presence." ;
+        """ ] ;
+    sh:sparql [ sh:message "MAY_CONTAIN is only possible ingredient or allergen presence." ;
         sh:select """
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX fp: <https://github.com/estebann23/kg-embeddings-recommender/ontology/food_preferences#>
@@ -205,23 +139,20 @@ fp:StatementShape a sh:NodeShape ;
                 $this rdf:predicate ?p ; fp:evidenceState "MAY_CONTAIN" .
                 FILTER (?p NOT IN (fp:contains, fp:hasAllergen))
             }
-        """
-    ] .
+        """ ] .
 
 fp:RelationshipMetadataShape a sh:NodeShape ;
-    sh:targetSubjectsOf fp:followsDiet, fp:requiresDiet, fp:allergicTo, fp:mustAvoid, fp:likesIngredient, fp:dislikesIngredient, fp:prefersCuisine, fp:prefersTaste, fp:requiresHealthRestriction, fp:prefersHealthGoal, fp:requiresHealthGoal, fp:offers, fp:contains, fp:hasCuisine, fp:hasTaste, fp:hasAllergen, fp:excludesIngredient, fp:excludesAllergen, fp:compatibleWithDiet, fp:incompatibleWithDiet ;
-    sh:sparql [
-        sh:message "Every relationship needs a typed statement with evidence and source metadata." ;
+    sh:targetSubjectsOf fp:rated, fp:scenarioFor, fp:contains, fp:mapsToFoodOn, fp:foodOnSubClassOf, fp:requiresDiet, fp:allergicTo, fp:mustAvoid, fp:hasAllergen, fp:excludesIngredient, fp:excludesAllergen, fp:compatibleWithDiet, fp:incompatibleWithDiet ;
+    sh:sparql [ sh:message "Every relationship needs typed statement evidence and source." ;
         sh:select """
             PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
             PREFIX fp: <https://github.com/estebann23/kg-embeddings-recommender/ontology/food_preferences#>
             SELECT $this ?path ?value WHERE {
                 $this ?path ?value .
-                FILTER (?path IN (fp:followsDiet, fp:requiresDiet, fp:allergicTo, fp:mustAvoid, fp:likesIngredient, fp:dislikesIngredient, fp:prefersCuisine, fp:prefersTaste, fp:requiresHealthRestriction, fp:prefersHealthGoal, fp:requiresHealthGoal, fp:offers, fp:contains, fp:hasCuisine, fp:hasTaste, fp:hasAllergen, fp:excludesIngredient, fp:excludesAllergen, fp:compatibleWithDiet, fp:incompatibleWithDiet))
+                FILTER (?path IN (fp:rated, fp:scenarioFor, fp:contains, fp:mapsToFoodOn, fp:foodOnSubClassOf, fp:requiresDiet, fp:allergicTo, fp:mustAvoid, fp:hasAllergen, fp:excludesIngredient, fp:excludesAllergen, fp:compatibleWithDiet, fp:incompatibleWithDiet))
                 FILTER NOT EXISTS {
                     ?record a rdf:Statement ; rdf:subject $this ;
                         rdf:predicate ?path ; rdf:object ?value .
                 }
             }
-        """
-    ] .
+        """ ] .

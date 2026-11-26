@@ -1,0 +1,12 @@
+{
+  "status": "rq2_compatible_only_rankings_complete",
+  "users": 40,
+  "rows": 400,
+  "scored_rows": 400,
+  "fallback_rows": 0,
+  "rankings_sha256": "c9ddfe1fe1c527b0cdf0f196768c73326ff32c6a361be1ab45836dd34a852125",
+  "midlayer_manifest_sha256": "5294ce99985f06ab5f173561cac49a536e44fc38732ac9c72ac3641bc7c4a111",
+  "model_sha256": "36caa963b553933958df674b1cb39e1be62f3472d1de918bb99e13fdd1af39c1",
+  "validation_sha256": "6c38e2f67f9c5831a32a6bb33bb0c450811793a6106da57e61df27e23f433b3f",
+  "created_utc": "2026-11-18T14:07:38.073817+00:00"
+}

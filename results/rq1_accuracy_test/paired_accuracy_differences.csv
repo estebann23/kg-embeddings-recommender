@@ -1,0 +1,13 @@
+population,metric,model_a,model_b,users,mean_a_minus_b,wins_a,ties,wins_b
+positive_test_users,precision_at_10,3_explicit_paths,1_item_cf,4000,-0.000125,21,3953,26
+positive_test_users,precision_at_10,4_rotate_primary,1_item_cf,4000,0.0067750000000000223,283,3691,26
+positive_test_users,precision_at_10,4_rotate_primary,3_explicit_paths,4000,0.0069000000000000242,282,3698,20
+positive_test_users,precision_at_50,3_explicit_paths,1_item_cf,4000,-0.00014500000000000006,91,3790,119
+positive_test_users,precision_at_50,4_rotate_primary,1_item_cf,4000,0.0044899999999999368,811,3107,82
+positive_test_users,precision_at_50,4_rotate_primary,3_explicit_paths,4000,0.0046349999999999326,830,3096,74
+positive_test_users,ndcg_at_10,3_explicit_paths,1_item_cf,4000,-0.00029434538006811853,22,3952,26
+positive_test_users,ndcg_at_10,4_rotate_primary,1_item_cf,4000,0.0088295186733305352,283,3691,26
+positive_test_users,ndcg_at_10,4_rotate_primary,3_explicit_paths,4000,0.0091238640533986524,284,3696,20
+positive_test_users,ndcg_at_50,3_explicit_paths,1_item_cf,4000,-0.0005373093439991005,94,3787,119
+positive_test_users,ndcg_at_50,4_rotate_primary,1_item_cf,4000,0.017592736447990826,828,3076,96
+positive_test_users,ndcg_at_50,4_rotate_primary,3_explicit_paths,4000,0.018130045791989943,838,3083,79

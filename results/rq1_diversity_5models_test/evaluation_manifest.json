@@ -1,0 +1,22 @@
+{
+  "status": "five_model_diversity_complete",
+  "models": [
+    "interaction_only_cf",
+    "weighted_graph_paths",
+    "semantic_mf",
+    "rotate_primary",
+    "rotate_foodon_taxonomy"
+  ],
+  "k": [
+    10,
+    50
+  ],
+  "users": 4000,
+  "catalog_recipes": 75972,
+  "per_user_rows": 40000,
+  "aggregate_rows": 10,
+  "preflight_sha256": "097fcbbc909350faea45ededdc555b9737712345a95ef8d6fd11c048a5c57036",
+  "per_user_sha256": "ccfc20af4b089a8cdcb8a4c4b47741c6481fe8773912dcee28ac274d7bc25d84",
+  "aggregate_sha256": "db3f9103766b9ae1ca17207394319ccbaba92a86ad8d2c891a679f8e22eba50d",
+  "created_utc": "2026-11-25T15:25:23.095937+00:00"
+}

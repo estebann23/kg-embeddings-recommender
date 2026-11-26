@@ -1,0 +1,114 @@
+{"factors": 16, "regularization": 0.01, "epoch": 10, "training_objective": 0.02908779011453901, "validation_rmse_clipped": 0.6361944164570237, "validation_mean_ndcg_at_10": 0.0009378829546391852, "users_with_positive_validation": 3995}
+{"factors": 16, "regularization": 0.01, "epoch": 20, "training_objective": 0.02113817551944937, "validation_rmse_clipped": 0.6361074432798111, "validation_mean_ndcg_at_10": 0.0007792244927082696, "users_with_positive_validation": 3995}
+{"factors": 16, "regularization": 0.1, "epoch": 10, "training_objective": 0.13967136773041317, "validation_rmse_clipped": 0.6161024845949201, "validation_mean_ndcg_at_10": 0.0002053229411315947, "users_with_positive_validation": 3995}
+{"factors": 16, "regularization": 0.1, "epoch": 20, "training_objective": 0.12547093197277615, "validation_rmse_clipped": 0.6196122810506439, "validation_mean_ndcg_at_10": 6.069124431339434e-05, "users_with_positive_validation": 3995}
+{"factors": 32, "regularization": 0.01, "epoch": 10, "training_objective": 0.02672499918299062, "validation_rmse_clipped": 0.6239179662049877, "validation_mean_ndcg_at_10": 0.0009127515720901911, "users_with_positive_validation": 3995}
+{"factors": 32, "regularization": 0.01, "epoch": 20, "training_objective": 0.023999605000019072, "validation_rmse_clipped": 0.6222445642950492, "validation_mean_ndcg_at_10": 0.0006867314058337364, "users_with_positive_validation": 3995}
+{"factors": 32, "regularization": 0.1, "epoch": 10, "training_objective": 0.13864293961865562, "validation_rmse_clipped": 0.6139988604125738, "validation_mean_ndcg_at_10": 0.00010627448457616227, "users_with_positive_validation": 3995}
+{"factors": 32, "regularization": 0.1, "epoch": 20, "training_objective": 0.12740127279077257, "validation_rmse_clipped": 0.6169131130529731, "validation_mean_ndcg_at_10": 2.5713289691347993e-05, "users_with_positive_validation": 3995}
+{
+  "status": "validation_selected_no_test_access",
+  "condition": "supplementary_interaction_only_matrix_factorization",
+  "dataset_id": "hummus_4000_v1",
+  "selected": {
+    "factors": 16,
+    "regularization": 0.01,
+    "epoch": 10,
+    "training_objective": 0.02908779011453901,
+    "validation_rmse_clipped": 0.6361944164570237,
+    "validation_mean_ndcg_at_10": 0.0009378829546391852,
+    "users_with_positive_validation": 3995
+  },
+  "grid_results": [
+    {
+      "factors": 16,
+      "regularization": 0.01,
+      "epoch": 10,
+      "training_objective": 0.02908779011453901,
+      "validation_rmse_clipped": 0.6361944164570237,
+      "validation_mean_ndcg_at_10": 0.0009378829546391852,
+      "users_with_positive_validation": 3995
+    },
+    {
+      "factors": 16,
+      "regularization": 0.01,
+      "epoch": 20,
+      "training_objective": 0.02113817551944937,
+      "validation_rmse_clipped": 0.6361074432798111,
+      "validation_mean_ndcg_at_10": 0.0007792244927082696,
+      "users_with_positive_validation": 3995
+    },
+    {
+      "factors": 16,
+      "regularization": 0.1,
+      "epoch": 10,
+      "training_objective": 0.13967136773041317,
+      "validation_rmse_clipped": 0.6161024845949201,
+      "validation_mean_ndcg_at_10": 0.0002053229411315947,
+      "users_with_positive_validation": 3995
+    },
+    {
+      "factors": 16,
+      "regularization": 0.1,
+      "epoch": 20,
+      "training_objective": 0.12547093197277615,
+      "validation_rmse_clipped": 0.6196122810506439,
+      "validation_mean_ndcg_at_10": 6.069124431339434e-05,
+      "users_with_positive_validation": 3995
+    },
+    {
+      "factors": 32,
+      "regularization": 0.01,
+      "epoch": 10,
+      "training_objective": 0.02672499918299062,
+      "validation_rmse_clipped": 0.6239179662049877,
+      "validation_mean_ndcg_at_10": 0.0009127515720901911,
+      "users_with_positive_validation": 3995
+    },
+    {
+      "factors": 32,
+      "regularization": 0.01,
+      "epoch": 20,
+      "training_objective": 0.023999605000019072,
+      "validation_rmse_clipped": 0.6222445642950492,
+      "validation_mean_ndcg_at_10": 0.0006867314058337364,
+      "users_with_positive_validation": 3995
+    },
+    {
+      "factors": 32,
+      "regularization": 0.1,
+      "epoch": 10,
+      "training_objective": 0.13864293961865562,
+      "validation_rmse_clipped": 0.6139988604125738,
+      "validation_mean_ndcg_at_10": 0.00010627448457616227,
+      "users_with_positive_validation": 3995
+    },
+    {
+      "factors": 32,
+      "regularization": 0.1,
+      "epoch": 20,
+      "training_objective": 0.12740127279077257,
+      "validation_rmse_clipped": 0.6169131130529731,
+      "validation_mean_ndcg_at_10": 2.5713289691347993e-05,
+      "users_with_positive_validation": 3995
+    }
+  ],
+  "train_users": 4000,
+  "train_ratings": 112000,
+  "validation_ratings": 16000,
+  "catalog_recipes": 75972,
+  "train_seen_recipes": 59538,
+  "unscorable_recipes": 16434,
+  "positive_validation_users": 3995,
+  "selected_validation_mean_ndcg_at_50": 0.0019795002245982163,
+  "config_sha256": "c2f9a2c8f9ee834ed2b98247e5bce466ba797106ea546d15412ad811a0f7b9dc",
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "reviews_sha256": "da64723ba731f26847eed39ee8530b8e6cd4471d4fd3dd613104d4bdd8d79e75",
+  "recipes_sha256": "2bb87aaaa7a87d0bf4a9ee7086073cc97203d85672f880021caa0549b040dc24",
+  "model_sha256": "ca58dc6700640250da1cbcaacfa919314ccfecb6b38f07e7de4698dcfe2c5a27",
+  "validation_top50_sha256": "9fa59fb8d8dc9d2847c458ca8758271c54310e00ca56b44f7e92c3b65877e3c1",
+  "test_blind_top50_sha256": "9fa59fb8d8dc9d2847c458ca8758271c54310e00ca56b44f7e92c3b65877e3c1",
+  "validation_per_user_sha256": "5dd6e72fd0052d0db96baceb63a5d37a79ba0eed84578358f5a56ecd9736b4cd",
+  "created_utc": "2026-11-25T14:18:15.816994+00:00",
+  "test_policy": "No test rating parsed or used for training, selection, or validation metrics."
+}

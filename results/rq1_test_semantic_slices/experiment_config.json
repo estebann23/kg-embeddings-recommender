@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "dataset_id": "hummus_4000_v1",
+  "seed": "rq1-test-slices-2026-11-25-v1",
+  "random_per_user": 4,
+  "semantic_per_user": 4,
+  "history": "all 28 training-rated recipes per user, regardless of rating",
+  "bin_precedence": [
+    "exact_ingredient",
+    "direct_foodon_only",
+    "foodon_parent_only",
+    "no_observed_overlap",
+    "insufficient_ingredient_mapping"
+  ],
+  "parent_policy": "one source-asserted edge; exclude parents observed in more than 5% of mapped cohort recipes",
+  "selection_policy": "SHA256(seed|user_id|review_id), four lowest hashes per user go to random_50; remaining four are categorized without test ratings",
+  "scope": "diagnostic subdivision of the already frozen chronological test split; not a new model split or validation set"
+}

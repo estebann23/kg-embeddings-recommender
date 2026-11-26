@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_mf_training",
+  "dataset_id": "hummus_4000_v1",
+  "condition": "supplementary_interaction_only_matrix_factorization",
+  "seed": 2026,
+  "input": "observed 1-5 train ratings only; validation ratings for selection only; no test rating access; no recipe attributes",
+  "model": "biased explicit-feedback latent-factor matrix factorization",
+  "prediction": "training global mean + user bias + recipe bias + user-vector dot recipe-vector",
+  "loss": "mean squared error on observed training entries + lambda times mean squared norms of the indexed user/recipe factors and biases; missing entries are not negatives",
+  "optimizer": "Adam",
+  "learning_rate": 0.01,
+  "batch_size": 4096,
+  "grid": {
+    "factors": [16, 32],
+    "regularization": [0.01, 0.1],
+    "checkpoint_epochs": [10, 20]
+  },
+  "selection": "highest mean validation NDCG@10 among users with at least one positive validation rating; ties use lower clipped validation RMSE, fewer factors, greater regularization, earlier epoch",
+  "ranking": "all 75972 cohort recipes minus each user's 28 training-rated recipes; trained recipes by unbounded MF score descending, ties by numeric recipe ID; recipes with no training rating follow as unscorable fallback by training positive count then numeric recipe ID",
+  "output_top_k": 50,
+  "validation_relevance": "ratings 4-5 positive for Precision; gains 0,0,0,1,2 for NDCG",
+  "boundary": "retrospective supplementary baseline added after original four-condition test work; validation-tuned and test-blind implementation, not a preregistered fifth primary condition",
+  "references": [
+    "Forbes and Zhu, Content-boosted Matrix Factorization for Recommender Systems: Experiments with Recipe Recommendation, RecSys 2011",
+    "Mahajan and Kaur, A Systematic Literature Review of Food Recommender Systems, SN Computer Science 2024"
+  ]
+}

@@ -1,4 +1,5 @@
-"""Small validated records shared by RDF/JSON ingestion and the graph layer."""
+# Small recorss for validarion, by RDF/JSON ingestion and the graph layer
+
 from dataclasses import dataclass, field
 import math
 import re
@@ -43,9 +44,9 @@ class Entity:
                 (not isinstance(item, float) or math.isfinite(item)) for item in values
             ):
                 raise ValueError("Node properties must be finite scalar values or scalar lists.")
-        if "composition_complete" in self.properties and (self.label != "Dish" or not isinstance(self.properties["composition_complete"], bool)):
-            raise ValueError("Composition completeness must be a boolean on a Dish when asserted.")
-        if self.label == "UserProfile" and self.properties.get("profile_type", "predefined") not in {"synthetic", "predefined"}:
+        if "composition_complete" in self.properties and (self.label != "Recipe" or not isinstance(self.properties["composition_complete"], bool)):
+            raise ValueError("Composition completeness must be a boolean on a Recipe when asserted.")
+        if self.label == "ScenarioProfile" and self.properties.get("profile_type", "predefined") not in {"synthetic", "predefined"}:
             raise ValueError("Profiles must be synthetic or predefined at this stage.")
 
     def as_row(self, dataset_id: str) -> dict[str, Any]:
@@ -55,7 +56,7 @@ class Entity:
             "properties": {
                 **self.properties, "id": self.id, "name": self.name,
                 "semantic_uri": self.semantic_uri, "dataset_id": dataset_id,
-                "managed_by": "food-preference-kg",
+                "managed_by": "recipe-recommendation-kg",
             },
         }
 
@@ -67,7 +68,7 @@ class Evidence:
     evidence_state: str
     source: tuple[str, ...]
     source_text: str | None = None
-    weight: float | None = None
+    rating: int | None = None
 
     def __post_init__(self):
         validate_id(self.id)
@@ -78,8 +79,8 @@ class Evidence:
             raise ValueError("Evidence requires source identifiers/references.")
         if self.source_text is not None and not isinstance(self.source_text, str):
             raise ValueError("Source text must be a string when supplied.")
-        if self.weight is not None and (not isinstance(self.weight, (int, float)) or isinstance(self.weight, bool) or not math.isfinite(self.weight) or not 0 <= self.weight <= 1):
-            raise ValueError("Preference weights must be finite numbers in [0,1].")
+        if self.rating is not None and (not isinstance(self.rating, int) or isinstance(self.rating, bool) or not 1 <= self.rating <= 5):
+            raise ValueError("Observed ratings must be integers in 1..5.")
 
 
 @dataclass(frozen=True)
@@ -100,6 +101,6 @@ class GraphData:
 @dataclass(frozen=True)
 class CompatibilityResult:
     profile_id: str
-    dish_id: str
+    recipe_id: str
     status: str
     reasons: tuple[dict[str, Any], ...] = ()

@@ -1,0 +1,401 @@
+generated_utc,user_id,profile_number,rank,recipe_id,title,compatibility_status,preference_score,score_source
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,1,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99995629370629369,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,2,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.99978146853146854,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,3,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99978146853146854,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,4,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99969405594405591,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,5,hummus_recipe_251220,Kittencal's Fluffiest Scrambled Eggs,COMPATIBLE,0.99956293706293708,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,6,hummus_recipe_31516,Spanish Chicken & Rice Bake,COMPATIBLE,0.99930069930069931,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,7,hummus_recipe_79944,Bacon Wrapped Chicken (Oamc),COMPATIBLE,0.999256993006993,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,8,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99908216783216786,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,9,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99881993006993008,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107135,2,10,hummus_recipe_71485,Faux Febreeze,COMPATIBLE,0.99825174825174823,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,1,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,2,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99987247337881779,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,3,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99964930179174893,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,4,hummus_recipe_82925,Edna's Apple Crumble (Aka. Apple Crisp),COMPATIBLE,0.99961742013645338,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,5,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.9995536568258625,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,6,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99952177517056695,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,7,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99945801185997574,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,8,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99936236689408919,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,9,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99929860358349809,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_1072593,5,10,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99920295861761144,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99989602107306252,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99989602107306252,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,3,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99979204214612505,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,4,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.9997227228615001,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,5,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99968806321918757,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,6,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99954942464993757,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,7,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.99951476500762515,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,8,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99930680715375009,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,9,hummus_recipe_31750,The Best Ever Waffles,COMPATIBLE,0.9990295300152503,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_107583,3,10,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99892555108831282,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,1,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99987245711370454,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,2,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99987245711370454,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,3,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99987245711370454,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,4,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99974491422740908,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,5,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99964925706268737,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,6,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99964925706268737,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,7,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99958548561953964,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,8,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99939417129009622,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,9,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99929851412537474,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_126440,5,10,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.99929851412537474,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99987203275961356,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99987203275961356,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,3,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99984004094951695,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,4,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99980804913942034,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,5,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99961609827884068,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,6,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.9993921556081643,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,7,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99932817198797108,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,8,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99920020474758453,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,9,hummus_recipe_121490,Strawberries & Cream Bread (Strawberry or Blueberry),COMPATIBLE,0.99916821293748803,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_128473,4,10,hummus_recipe_80156,The Most Wonderful Gingerbread Cookies,COMPATIBLE,0.99910422931729481,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,1,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99984059172352224,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99974494675763559,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,3,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.9996811834470446,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,4,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99968118344704449,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,5,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99936236689408919,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,6,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99891602371995147,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,7,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99862908882229173,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,8,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99843779889051842,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,9,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99773640247401651,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_131126,5,10,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99722629598928769,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,1,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,1,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,2,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99868785537250326,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,3,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99846916460125379,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,4,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.998396267677504,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,5,hummus_recipe_100526,"Sweet, Creamy Coleslaw",COMPATIBLE,0.99788598921125526,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,6,hummus_recipe_46922,Awesome Baked Ham,COMPATIBLE,0.99708412305000726,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,7,hummus_recipe_372633,French Antilles Vinaigrette,COMPATIBLE,0.99693832920250758,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,8,hummus_recipe_61589,Ralph & Kacoo's Tartar Sauce,COMPATIBLE,0.99591777227001022,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,9,hummus_recipe_289407,Bek's Famous Pico De Gallo,COMPATIBLE,0.99584487534626032,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_133174,1,10,hummus_recipe_60548,Zingy Tuna Salad,COMPATIBLE,0.99497011226126253,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,1,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,2,hummus_recipe_18914,Incredibly Delicious Cheese Garlic Bread Spread,COMPATIBLE,0.99978144942739755,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,3,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99978144942739755,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,4,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99960660896931552,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,5,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.9994317685112335,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,6,hummus_recipe_79944,Bacon Wrapped Chicken (Oamc),COMPATIBLE,0.9994317685112335,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,7,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99921321793863105,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,8,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99916950782411051,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,9,hummus_recipe_79595,Best Twice-Baked Potatoes,COMPATIBLE,0.99916950782411051,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_140132,2,10,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.99908208759506945,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,1,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,1,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,2,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.99963551538125084,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,3,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99934392768625169,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,4,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99934392768625169,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,5,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99927103076250179,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,6,hummus_recipe_47195,Uncle Bill's Microwave Potato Chips,COMPATIBLE,0.99883364922000295,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,7,hummus_recipe_13546,Beth's Pizza Crust,COMPATIBLE,0.99774019536375569,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,8,hummus_recipe_46922,Awesome Baked Ham,COMPATIBLE,0.9975215045925061,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,9,hummus_recipe_238069,Shirley's Perfect Rare Roast Beef,COMPATIBLE,0.9960635661175099,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_157425,1,10,hummus_recipe_155018,Pan-Roasted Broccoli,COMPATIBLE,0.99533459688001169,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,1,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99996533074469562,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99996533074469562,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,3,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99979198446817363,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,4,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99965330744695602,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,5,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99961863819165164,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,6,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.99958396893634727,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,7,hummus_recipe_80156,The Most Wonderful Gingerbread Cookies,COMPATIBLE,0.99944529191512965,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,8,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99930661489391204,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,9,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99923727638330329,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_166642,3,10,hummus_recipe_78194,Taco Bell Quesadillas,COMPATIBLE,0.99864789904312845,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,1,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99996801637561572,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,2,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99996801637561572,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,3,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99971214738054115,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,4,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99968016375615687,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,5,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.9996161965073882,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,6,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99948826200985097,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,7,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99897652401970194,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,8,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99891255677093338,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,9,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99891255677093327,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_169430,4,10,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99852875327832147,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,1,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99993602047344843,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,2,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99993602047344843,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,3,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99980806142034551,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,4,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99964811260396669,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,5,hummus_recipe_82925,Edna's Apple Crumble (Aka. Apple Crisp),COMPATIBLE,0.99952015355086377,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,6,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99952015355086377,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,7,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99942418426103652,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,8,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99929622520793338,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,9,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99913627639155478,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_174096,4,10,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99907229686500321,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99993622448979591,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,2,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99990433673469381,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,3,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99990433673469381,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,4,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99964923469387745,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,5,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.99952168367346939,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,6,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.9994897959183674,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,7,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.9994579081632653,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,8,hummus_recipe_79944,Bacon Wrapped Chicken (Oamc),COMPATIBLE,0.99939413265306121,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,9,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99936224489795922,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_176615,5,10,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.99936224489795911,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,1,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,2,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99989602828030777,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,3,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99975739932071805,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,4,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99965342760102582,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,5,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99958411312123108,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,6,hummus_recipe_79944,Bacon Wrapped Chicken (Oamc),COMPATIBLE,0.99954945588133359,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,7,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99944548416164136,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,8,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99934151244194913,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,9,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99927219796215438,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_17803,3,10,hummus_recipe_82925,Edna's Apple Crumble (Aka. Apple Crisp),COMPATIBLE,0.9992375407222569,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,1,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99985426989215975,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,2,hummus_recipe_46922,Awesome Baked Ham,COMPATIBLE,0.99956280967647915,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,3,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99948994462255902,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,4,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99927134946079854,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,5,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.99905275429903817,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,6,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99803264354415622,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,7,hummus_recipe_45510,Iced Tea Sweetener,COMPATIBLE,0.99642961235791305,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,8,hummus_recipe_55673,Baked Balsamic Chicken,COMPATIBLE,0.9951180413873506,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,9,hummus_recipe_33105,Zesty Low-Fat Chicken Breasts,COMPATIBLE,0.99489944622559023,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_199848,1,10,hummus_recipe_115153,Cauliflower Popcorn - Roasted Cauliflower,COMPATIBLE,0.99468085106382975,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99986890403775563,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,2,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99982520538367425,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,3,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99943191749694105,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,4,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99912602691837082,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,5,hummus_recipe_46922,Awesome Baked Ham,COMPATIBLE,0.9988638349938822,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,6,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99868904037755635,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,7,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99838314979898612,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,8,hummus_recipe_83524,Frizzled Cabbage,COMPATIBLE,0.99781506729592728,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,9,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.9970284915224612,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_204024,2,10,hummus_recipe_100526,"Sweet, Creamy Coleslaw",COMPATIBLE,0.99676629959797236,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,1,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,1,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,2,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99989600665557399,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,3,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99986134220743206,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,4,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99972268441486412,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,5,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99934137548530222,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,6,hummus_recipe_83524,Frizzled Cabbage,COMPATIBLE,0.99934137548530222,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,7,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99913338879645042,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,8,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.9990293954520244,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,9,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.99899473100388247,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_222564,3,10,hummus_recipe_219251,Slow Cooker Macaroni & Cheese,COMPATIBLE,0.99805879090404881,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99993604093380228,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99984010233450593,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,3,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99971218420211061,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,4,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99952030700351768,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,5,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99952030700351768,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,6,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99945634793732008,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,7,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.99932842980492487,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,8,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99932842980492476,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,9,hummus_recipe_136589,Best Apple Cake,COMPATIBLE,0.9992324912056284,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_226863,4,10,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99891269587464027,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99993067110371603,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99986134220743206,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,3,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99975734886300605,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,4,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99968801996672219,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,5,hummus_recipe_79944,Bacon Wrapped Chicken (Oamc),COMPATIBLE,0.99937603993344426,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,6,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99930671103716029,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,7,hummus_recipe_82925,Edna's Apple Crumble (Aka. Apple Crisp),COMPATIBLE,0.99920271769273428,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,8,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99909872434830838,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,9,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99878674431503045,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_280271,3,10,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99875207986688852,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99996811834470445,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99996811834470445,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,3,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99987247337881779,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,4,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99955365682586239,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,5,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99945801185997574,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,6,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.9994261302046803,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,7,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99926672192820254,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,8,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99926672192820254,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,9,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.99913919530702033,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_286566,5,10,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99862908882229173,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,1,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99978134110787176,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,2,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99970845481049564,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,3,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99941690962099128,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,4,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.99919825072886304,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,5,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99825072886297384,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,6,hummus_recipe_155018,Pan-Roasted Broccoli,COMPATIBLE,0.99730320699708452,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,7,hummus_recipe_115153,Cauliflower Popcorn - Roasted Cauliflower,COMPATIBLE,0.99679300291545192,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,8,hummus_recipe_47195,Uncle Bill's Microwave Potato Chips,COMPATIBLE,0.99657434402332368,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,9,hummus_recipe_13546,Beth's Pizza Crust,COMPATIBLE,0.99635568513119532,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_305531,1,10,hummus_recipe_166030,"Taco Seasoning - Budget Friendly Seasoning for Tacos, Burritos..",COMPATIBLE,0.99511661807580176,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,1,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.99995630134591851,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99995630134591851,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,3,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99965041076734829,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,4,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.9996067121132669,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,5,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99947561615102254,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,6,hummus_recipe_79944,Bacon Wrapped Chicken (Oamc),COMPATIBLE,0.99934452018877817,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,7,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.9992571228806153,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,8,hummus_recipe_146427,Sweet Chicken Bacon Wraps (Paula Deen),COMPATIBLE,0.99895123230204508,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,9,hummus_recipe_31371,Bev's Sauteed Yellow Squash,COMPATIBLE,0.99877643768571933,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_369715,2,10,hummus_recipe_83524,Frizzled Cabbage,COMPATIBLE,0.99877643768571933,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99993602047344843,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,2,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99987204094689708,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,3,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99984005118362118,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,4,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99974408189379393,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,5,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99971209213051826,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,6,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99920025591810613,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,7,hummus_recipe_115153,Cauliflower Popcorn - Roasted Cauliflower,COMPATIBLE,0.99920025591810613,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,8,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.99920025591810613,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,9,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99900831733845175,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_37449,4,10,hummus_recipe_82925,Edna's Apple Crumble (Aka. Apple Crisp),COMPATIBLE,0.99884836852207293,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99993066148939125,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,2,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99982665372347801,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,3,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99979198446817363,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,4,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99975731521286915,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,5,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99972264595756488,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,6,hummus_recipe_30366,Bev's Macaroni and Cheese,COMPATIBLE,0.99958396893634727,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,7,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99947996117043403,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,8,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.99937595340452079,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,9,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99927194563860766,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_383346,3,10,hummus_recipe_82925,Edna's Apple Crumble (Aka. Apple Crisp),COMPATIBLE,0.99927194563860766,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99989598502184318,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,2,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99986131336245754,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,3,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99979197004368636,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,4,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99965328340614379,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,5,hummus_recipe_20616,Rosie's Traditional Irish Soda Bread,COMPATIBLE,0.99965328340614379,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,6,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99954926842798697,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,7,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99944525344983015,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,8,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99934123847167333,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,9,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.9990638651965883,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_39835,3,10,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99902919353720265,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99993603684277854,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,2,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99987207368555708,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,3,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99987207368555708,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,4,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.9997761289497249,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,5,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99968018421389282,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,6,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.9995522578994499,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,7,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.9994243315850071,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,8,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99907253422028908,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,9,hummus_recipe_80156,The Most Wonderful Gingerbread Cookies,COMPATIBLE,0.99904055264167835,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_424680,4,10,hummus_recipe_136589,Best Apple Cake,COMPATIBLE,0.99884866317001397,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,1,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,2,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99993603275123133,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,3,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99987206550246277,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,4,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99977611462930982,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,5,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99958421288300392,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,6,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99945627838546669,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,7,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.99945627838546658,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,8,hummus_recipe_83524,Frizzled Cabbage,COMPATIBLE,0.99936032751231374,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,9,hummus_recipe_136589,Best Apple Cake,COMPATIBLE,0.99926437663916079,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_4470,4,10,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.99894454039531766,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99984058155847466,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,2,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99977681418186459,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,3,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99971304680525441,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,4,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99961739574033914,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,5,hummus_recipe_31371,Bev's Sauteed Yellow Squash,COMPATIBLE,0.99945797729881392,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,6,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99939420992220374,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,7,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99936232623389876,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,8,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99933044254559367,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,9,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99929855885728869,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_461834,5,10,hummus_recipe_136589,Best Apple Cake,COMPATIBLE,0.99917102410406833,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,1,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99956268221574351,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,2,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99948979591836729,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,3,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99854227405247808,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,4,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99839650145772596,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,5,hummus_recipe_100526,"Sweet, Creamy Coleslaw",COMPATIBLE,0.99803206997084548,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,6,hummus_recipe_208501,Barefoot Contessa's Oven Roasted Bacon,COMPATIBLE,0.99708454810495617,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,7,hummus_recipe_462602,Grilled Zucchini With Sea Salt,COMPATIBLE,0.99701166180758016,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,8,hummus_recipe_129263,Wasabi Cucumber Salad,COMPATIBLE,0.99693877551020404,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,9,hummus_recipe_33105,Zesty Low-Fat Chicken Breasts,COMPATIBLE,0.99650145772594745,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_482376,1,10,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.9962099125364432,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99987242457102765,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99971295528481208,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,3,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99964916757032596,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,4,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99948969828411049,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,5,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99945780442686738,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,6,hummus_recipe_30366,Bev's Macaroni and Cheese,COMPATIBLE,0.99939401671238115,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,7,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99936212285513815,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,8,hummus_recipe_136589,Best Apple Cake,COMPATIBLE,0.99933022899789503,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,9,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.99917075971167946,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_486725,5,10,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99856477642406072,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99995628606399722,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,2,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99973771638398323,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,3,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.99921314915194959,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,4,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.9987760097919216,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,5,hummus_recipe_79595,Best Twice-Baked Potatoes,COMPATIBLE,0.997202308095821,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,6,hummus_recipe_18816,Cabbage for Those Who Dislike Cabbage,COMPATIBLE,0.99715859415981811,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,7,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99694002447980412,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,8,hummus_recipe_18914,Incredibly Delicious Cheese Garlic Bread Spread,COMPATIBLE,0.99672145479979024,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,9,hummus_recipe_35525,Quick Honey Mustard Pork Stir-Fry,COMPATIBLE,0.99527889491169785,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_498271,2,10,hummus_recipe_328082,Homemade Mayo,COMPATIBLE,0.99484175555166987,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,1,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99985426989215975,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,2,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99970853978431951,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,3,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99956280967647926,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,4,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99934421451471878,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,5,hummus_recipe_55673,Baked Balsamic Chicken,COMPATIBLE,0.99781404838239585,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,6,hummus_recipe_33105,Zesty Low-Fat Chicken Breasts,COMPATIBLE,0.99708539784319439,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,7,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.99672107257359377,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,8,hummus_recipe_50338,Ww 5 Can Soup,COMPATIBLE,0.99497231127951036,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,9,hummus_recipe_146427,Sweet Chicken Bacon Wraps (Paula Deen),COMPATIBLE,0.99438939084814915,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_5060,1,10,hummus_recipe_47195,Uncle Bill's Microwave Potato Chips,COMPATIBLE,0.99409793063246865,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99984060188727364,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,2,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99980872226472839,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,3,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99952180566182092,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,4,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99939428717163992,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,5,hummus_recipe_77397,Kittencal's 5-Minute Cinnamon Flop Brunch Cake,COMPATIBLE,0.99907549094618719,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,6,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99821474113746489,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,7,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99757714868655956,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,8,hummus_recipe_344218,Haphazard Guacamole,COMPATIBLE,0.99751338944146895,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,9,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.99678015812292786,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_58104,5,10,hummus_recipe_135350,Fannie Farmer's Classic Baked Macaroni & Cheese,COMPATIBLE,0.99665263963274664,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99996533074469562,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,2,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99979198446817363,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,3,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99972264595756488,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,4,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99965330744695602,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,5,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99961863819165164,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,6,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99954929968104289,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,7,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99951463042573852,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,8,hummus_recipe_152441,24k Carrots,COMPATIBLE,0.99951463042573852,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,9,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99937595340452079,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_593927,3,10,hummus_recipe_5170,Pete's Scratch Pancakes,COMPATIBLE,0.99930661489391204,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,1,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,2,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99986884672553988,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,3,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99978141120923314,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,4,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.9996939756929264,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,5,hummus_recipe_79944,Bacon Wrapped Chicken (Oamc),COMPATIBLE,0.99965025793477313,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,6,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99938795138585301,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,7,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99890705604616592,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,8,hummus_recipe_312649,Fantasy Fudge (Peanut Butter Fudge),COMPATIBLE,0.99881962052985918,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,9,hummus_recipe_47195,Uncle Bill's Microwave Potato Chips,COMPATIBLE,0.99846987846463242,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_6357,2,10,hummus_recipe_26306,Copycat  Green Giant Niblets Corn in Butter Sauce,COMPATIBLE,0.99846987846463231,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,1,hummus_recipe_69173,Kittencal's Italian Melt-In-Your-Mouth Meatballs,COMPATIBLE,0.99993602865916065,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99984007164790167,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,3,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99974411463664281,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,4,hummus_recipe_136589,Best Apple Cake,COMPATIBLE,0.99974411463664281,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,5,hummus_recipe_25885,Banana Banana Bread,COMPATIBLE,0.99936028659160692,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,6,hummus_recipe_51537,My No Roll Pie Crust,COMPATIBLE,0.9993283009211873,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,7,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.9989444728761514,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,8,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99881653019447292,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,9,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99849667349027638,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_679953,4,10,hummus_recipe_78194,Taco Bell Quesadillas,COMPATIBLE,0.99833674513817816,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,1,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99982517482517475,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,2,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99908216783216786,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,3,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.99864510489510494,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,4,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99794580419580425,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,5,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.99750874125874134,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,6,hummus_recipe_46922,Awesome Baked Ham,COMPATIBLE,0.99637237762237763,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,7,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99562937062937062,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,8,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99558566433566442,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,9,hummus_recipe_83524,Frizzled Cabbage,COMPATIBLE,0.99536713286713285,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_80353,2,10,hummus_recipe_176016,Sheila's Best  Balsamic Dressing,COMPATIBLE,0.99283216783216788,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,1,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99992712432590003,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,2,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99970849730360012,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,3,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.99956274595540007,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,4,hummus_recipe_211485,Ginger Me up Chicken! Low Fat Honey & Ginger Chicken Breasts,COMPATIBLE,0.99905261623670016,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,5,hummus_recipe_55673,Baked Balsamic Chicken,COMPATIBLE,0.99861536219210034,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,6,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99861536219210034,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,7,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99795948112520039,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,8,hummus_recipe_28943,Most Incredible No Fail Pie Crust,COMPATIBLE,0.99650196764320076,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,9,hummus_recipe_155018,Pan-Roasted Broccoli,COMPATIBLE,0.99628334062090074,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_88099,1,10,hummus_recipe_13546,Beth's Pizza Crust,COMPATIBLE,0.99591896225040077,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,1,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99992710307625021,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,2,hummus_recipe_15072,Perfect Chocolate Brownies,COMPATIBLE,0.99970841230500074,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,3,hummus_recipe_70165,Pizza Dough for Thin Crust Pizza,COMPATIBLE,0.99941682461000148,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,4,hummus_recipe_8782,"Roast ""Sticky"" Chicken",COMPATIBLE,0.99897944306750253,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,5,hummus_recipe_46922,Awesome Baked Ham,COMPATIBLE,0.99854206152500358,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,6,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.9975215045925061,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,7,hummus_recipe_208501,Barefoot Contessa's Oven Roasted Bacon,COMPATIBLE,0.99701122612625748,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,8,hummus_recipe_155018,Pan-Roasted Broccoli,COMPATIBLE,0.99664674150750843,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,9,hummus_recipe_115153,Cauliflower Popcorn - Roasted Cauliflower,COMPATIBLE,0.99635515381250905,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_89831,1,10,hummus_recipe_33105,Zesty Low-Fat Chicken Breasts,COMPATIBLE,0.99628225688875927,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,1,hummus_recipe_87782,Greek Potatoes (Oven-Roasted and Delicious!),COMPATIBLE,0.99991258741258737,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,2,hummus_recipe_89204,Crock-Pot Chicken With Black Beans & Cream Cheese,COMPATIBLE,0.99982517482517475,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,3,hummus_recipe_15411,Impossible Peanut Butter Cookies,COMPATIBLE,0.99978146853146854,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,4,hummus_recipe_65768,Chicken Lazone,COMPATIBLE,0.9996503496503496,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,5,hummus_recipe_34382,Mashed Red Potatoes With Garlic and Parmesan,COMPATIBLE,0.99943181818181825,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,6,hummus_recipe_105682,Sugar and Cinnamon Spiced Pecans,COMPATIBLE,0.99912587412587417,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,7,hummus_recipe_102073,Opal's Pumpkin Pie,COMPATIBLE,0.99833916083916086,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,8,hummus_recipe_79606,Dirty Shrimp in Butter-Beer Sauce,COMPATIBLE,0.99724650349650346,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,9,hummus_recipe_27520,Poverty Meal,COMPATIBLE,0.99580419580419577,score
+2026-11-18T14:07:38.073817+00:00,hummus_user_95743,2,10,hummus_recipe_52272,Thick and Creamy New England Clam Chowder,COMPATIBLE,0.9951486013986014,score

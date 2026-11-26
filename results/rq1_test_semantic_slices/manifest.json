@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "dataset_id": "hummus_4000_v1",
+  "config_sha256": "3aa282d30e2eb82c65e9745c7733c7dc92ed55ccacd44ec97585adad80409f61",
+  "source_sha256": {
+    "reviews": "da64723ba731f26847eed39ee8530b8e6cd4471d4fd3dd613104d4bdd8d79e75",
+    "recipe_ingredients": "ac2f1208c18a947163f37b788995d46326eaa468b777022ff50811a6a2ecac35",
+    "foodon_links": "462f84acc125b646895677f250572c4d4964d5c02f2f9ef55acc4b8124ccb0de",
+    "foodon_hierarchy": "06614342055d9a60cb4e2183803145d1438bb578dd6e48e2715363acff7f6348"
+  },
+  "files": {
+    "assignments": {
+      "path": "test_split_assignments.csv",
+      "sha256": "9a95ff526f609dbc996d02731ad0fb394cd86f917df633f03c9ffef5949fc837"
+    },
+    "random": {
+      "path": "random_50.csv",
+      "sha256": "e8cc490699c52a5dc2121b6a26a4ed5b44f1ffd3ec9fc11c1c4f030769348c4c"
+    },
+    "semantic": {
+      "path": "semantic_50.csv",
+      "sha256": "98a68815468df10a9062d77dfdabee157293c552f5cc039b62b53bd7217e4538"
+    },
+    "config_snapshot": {
+      "path": "experiment_config.json",
+      "sha256": "3aa282d30e2eb82c65e9745c7733c7dc92ed55ccacd44ec97585adad80409f61"
+    },
+    "exact_ingredient": {
+      "path": "bin_exact_ingredient.csv",
+      "sha256": "508fedef2586b33f331734c7a26a3dcf889a67b2ad111dd89ed24326e9985e20"
+    },
+    "direct_foodon_only": {
+      "path": "bin_direct_foodon_only.csv",
+      "sha256": "e8a0d62229a993cebece8049589319aff99aa0a6464b5a492bed0174b189ee6f"
+    },
+    "foodon_parent_only": {
+      "path": "bin_foodon_parent_only.csv",
+      "sha256": "42e23a83e340ce4876c6cd08976ca4cc8c7ce2cd68ecd9274bd1a0189859d02a"
+    },
+    "no_observed_overlap": {
+      "path": "bin_no_observed_overlap.csv",
+      "sha256": "f38e693fabe0e6023f3b9fd85326f4b5ac1815a66980bba091be376329641ac3"
+    },
+    "insufficient_ingredient_mapping": {
+      "path": "bin_insufficient_ingredient_mapping.csv",
+      "sha256": "ffa8a1bf664f89f7973f7122b468f690403309900e459c326de1cd995a616b62"
+    }
+  },
+  "users": 4000,
+  "test_rows": 32000,
+  "random_rows": 16000,
+  "semantic_rows": 16000,
+  "bin_counts": {
+    "exact_ingredient": 12740,
+    "direct_foodon_only": 362,
+    "foodon_parent_only": 56,
+    "no_observed_overlap": 142,
+    "insufficient_ingredient_mapping": 2700
+  },
+  "mapped_recipes": 65984,
+  "broad_parent_concepts_excluded": 44,
+  "test_rating_distribution_after_assignment": {
+    "random_50": {
+      "1": 117,
+      "2": 187,
+      "3": 593,
+      "4": 2300,
+      "5": 12803
+    },
+    "semantic_50": {
+      "1": 119,
+      "2": 179,
+      "3": 535,
+      "4": 2334,
+      "5": 12833
+    }
+  },
+  "bin_summary_after_assignment": {
+    "exact_ingredient": {
+      "rows": 12740,
+      "users": 3990,
+      "positive_test_ratings_4_or_5": 12056
+    },
+    "direct_foodon_only": {
+      "rows": 362,
+      "users": 344,
+      "positive_test_ratings_4_or_5": 344
+    },
+    "foodon_parent_only": {
+      "rows": 56,
+      "users": 55,
+      "positive_test_ratings_4_or_5": 53
+    },
+    "no_observed_overlap": {
+      "rows": 142,
+      "users": 140,
+      "positive_test_ratings_4_or_5": 136
+    },
+    "insufficient_ingredient_mapping": {
+      "rows": 2700,
+      "users": 2032,
+      "positive_test_ratings_4_or_5": 2578
+    }
+  }
+}

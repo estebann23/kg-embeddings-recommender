@@ -1,0 +1,28 @@
+{
+  "status": "test_accuracy_complete",
+  "conditions": [
+    "1_item_cf",
+    "3_explicit_paths",
+    "4_rotate_primary"
+  ],
+  "k": [
+    10,
+    50
+  ],
+  "all_users": 4000,
+  "positive_test_users": 4000,
+  "users_without_positive_test_target": 0,
+  "test_ratings": 32000,
+  "preflight_sha256": "cd19b7fe66c913632644816c0af0e3f59d3095d12a49533554e52a244c3e1d1e",
+  "addendum_sha256": "a50f0b779b386108a8a8f7b8c87db446c30bd4ea6cfe9152d06c6d52e9651bfc",
+  "rank_manifest_sha256": {
+    "1_item_cf": "a8e9fb969c35ee3ba2e294a000e958f934e24931c0b12540dbb6bd3167e4e9db",
+    "3_explicit_paths": "3a5a3a0572b9281168f8a30c8ce550002e3a8787e152512d3a4b94261b6587eb",
+    "4_rotate_primary": "716a2da2fca4518ca85fc81404872589dfac82462c29862e88cfc3be2756e002"
+  },
+  "per_user_accuracy_sha256": "398b6deefdb69e03d89c4507ae4c2442c9f5e1ba773afc6f624506f2073a1178",
+  "aggregate_accuracy_sha256": "51b02dca943f4e0265f1be591c89cc8265ce10ce39ba3d357522b4eca93f0f48",
+  "paired_accuracy_differences_sha256": "37bc290f6b06700f71f6cd2ecb087a162ce4ddfe996815e979eb370f76971e42",
+  "generated_utc": "2026-11-18T09:47:15.901421+00:00",
+  "note": "No model or setting was changed using test ratings; this is an accuracy-only three-condition pass."
+}

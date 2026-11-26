@@ -1,0 +1,23 @@
+{
+  "status": "rq2_midlayer_preflight_passed",
+  "users": 40,
+  "users_per_profile": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8
+  },
+  "catalog": 75972,
+  "original_assignments": 10,
+  "new_fictional_assignments": 30,
+  "config_sha256": "fd29ddc20a6ce728f8833d5131ab338fbb40349496d66d64d8a579b3923d899c",
+  "rules_sha256": "e79ba4a28bdb83b9501c161b79aaba5a90e2914f554ff9edff12053c6a148a32",
+  "assignment_sha256": "17800f5f7e00e7c61ba3c932e000fc29ed38694a114d586b4579eead10e6c559",
+  "pilot_assignment_sha256": "f6628621a40c927c178eb4ad19dead3151fb848839a3e0eec850ed20250331d4",
+  "graph_edges_sha256": "471a52b3344513ad7e2307e9ea8f60b567c17d056184bd201945293822f4e150",
+  "graph_nodes_sha256": "3b53f48b0bdfbeba0a6d7375d104839b1be284fabd03a9e1478f5fcbd991dcec",
+  "raw_lines_sha256": "17055c6eb7e1363d9992b6bb15cf6e2cc552bb8fef045fcc63c66871026d9ed4",
+  "recipes_sha256": "2bb87aaaa7a87d0bf4a9ee7086073cc97203d85672f880021caa0549b040dc24",
+  "reviews_sha256": "da64723ba731f26847eed39ee8530b8e6cd4471d4fd3dd613104d4bdd8d79e75"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "validation_selected_no_test_access",
+  "variant": "primary",
+  "selected_weight_five": 0.5,
+  "selected_weight_four": 0.5,
+  "mean_ndcg_at_10_by_weight": {
+    "0.0": 0.0070622820722168805,
+    "0.25": 0.007132892849413375,
+    "0.5": 0.007160095695939666,
+    "0.75": 0.007047311953503993,
+    "1.0": 0.006577977714524513
+  },
+  "users_with_positive_validation": 3995,
+  "training_manifest_sha256": "a27a050f506c38f8132ce515226f29eb491358b13fe6a7b8ad7e270dd5ffc398",
+  "model_sha256": "36caa963b553933958df674b1cb39e1be62f3472d1de918bb99e13fdd1af39c1",
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "created_utc": "2026-11-18T07:27:49.862276+00:00"
+}

@@ -1,0 +1,25 @@
+model,parameter_setting,validation_mean_ndcg_at_10,selected
+interaction_only_cf,"{""neighbor_n"": 5}",0.00039218525135043241,1
+interaction_only_cf,"{""neighbor_n"": 10}",0.00039218525135043241,0
+interaction_only_cf,"{""neighbor_n"": 20}",0.00039218525135043241,0
+weighted_graph_paths,"{""beta"": 0.0}",0.00034705467591546971,0
+weighted_graph_paths,"{""beta"": 0.25}",0.00047586989917726462,0
+weighted_graph_paths,"{""beta"": 0.5}",0.00056209311011952336,1
+semantic_mf,"{""content_scale"": 0.5, ""epoch"": 10, ""factors"": 16, ""regularization"": 0.01}",0.00075953661422713823,1
+semantic_mf,"{""content_scale"": 0.5, ""epoch"": 20, ""factors"": 16, ""regularization"": 0.01}",0.00075509023909306103,0
+semantic_mf,"{""content_scale"": 0.5, ""epoch"": 10, ""factors"": 16, ""regularization"": 0.1}",0.00018890887804714487,0
+semantic_mf,"{""content_scale"": 0.5, ""epoch"": 20, ""factors"": 16, ""regularization"": 0.1}",5.3935857954879739e-05,0
+semantic_mf,"{""content_scale"": 1.0, ""epoch"": 10, ""factors"": 16, ""regularization"": 0.01}",0.00051514410754894169,0
+semantic_mf,"{""content_scale"": 1.0, ""epoch"": 20, ""factors"": 16, ""regularization"": 0.01}",0.00057899260294898313,0
+semantic_mf,"{""content_scale"": 1.0, ""epoch"": 10, ""factors"": 16, ""regularization"": 0.1}",0.00011588886977482876,0
+semantic_mf,"{""content_scale"": 1.0, ""epoch"": 20, ""factors"": 16, ""regularization"": 0.1}",2.3096818514644637e-05,0
+rotate_primary,"{""weight_five"": 0.0}",0.0070622820722168805,0
+rotate_primary,"{""weight_five"": 0.25}",0.0071328928494133748,0
+rotate_primary,"{""weight_five"": 0.5}",0.0071600956959396661,1
+rotate_primary,"{""weight_five"": 0.75}",0.0070473119535039933,0
+rotate_primary,"{""weight_five"": 1.0}",0.006577977714524513,0
+rotate_foodon_taxonomy,"{""weight_five"": 0.0}",0.0063894605246824073,0
+rotate_foodon_taxonomy,"{""weight_five"": 0.25}",0.0069387174142012207,0
+rotate_foodon_taxonomy,"{""weight_five"": 0.5}",0.0071350547203064638,0
+rotate_foodon_taxonomy,"{""weight_five"": 0.75}",0.0072711568307264295,1
+rotate_foodon_taxonomy,"{""weight_five"": 1.0}",0.0068023752781047886,0

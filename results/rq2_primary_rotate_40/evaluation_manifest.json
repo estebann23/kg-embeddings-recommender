@@ -1,0 +1,11 @@
+{
+  "status": "rq2_compatible_only_evaluation_complete",
+  "users": 40,
+  "users_with_full_top10": 40,
+  "recommended_positions": 400,
+  "incompatible_or_unknown_recommendations": 0,
+  "observed_positive_test_hits_at_10": 0,
+  "mean_conditional_precision_at_10": 0.0,
+  "per_user_sha256": "63252ca7fd57bfe570d55e29a69422ee68681a1c02938c4c5eefa169799c5cc6",
+  "ranking_manifest_sha256": "17ff85fd2afe63e74608ddc77e77f142f2d81922f3d5fa1b98fd91d62961812b"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "fitted_static_attributes_and_baseline_cf",
+  "condition": "2_item_cf_attributes",
+  "dataset_id": "hummus_4000_v1",
+  "selected_baseline_n": 5,
+  "grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "recipes": 75972,
+  "recipes_with_mapped_ingredient": 65984,
+  "recipes_with_direct_foodon": 65943,
+  "ingredient_id_count": 9710,
+  "direct_foodon_id_count": 1661,
+  "ingredient_incidence_count": 586292,
+  "direct_foodon_incidence_count": 506069,
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "base_fit_manifest_sha256": "2cb2fb9d0e5b7fdba136634ba77fb1d7999548593ddefdf8d68214d9bccecb78",
+  "base_validation_selection_sha256": "18af9a791fa59998ee6f51461f44ed9f629e456c52d12d4462cab466474cdacc",
+  "recipe_ingredients_sha256": "ac2f1208c18a947163f37b788995d46326eaa468b777022ff50811a6a2ecac35",
+  "foodon_links_sha256": "462f84acc125b646895677f250572c4d4964d5c02f2f9ef55acc4b8124ccb0de",
+  "recipe_order_sha256": "ee2642ae5b6471b50a77478ba16fc4e965d67135d4ba6ea1eb6305c80c4b514a",
+  "ingredient_matrix_sha256": "2d33a2d63ae3da646e411d3d03bf6e3d9be9fad625791507b0b2cb2a132acf91",
+  "direct_foodon_matrix_sha256": "c3d968a43d8cfee73d93407896b5a052a814b6d85934b08587db022782e80322",
+  "created_utc": "2026-11-18T08:48:08.048925+00:00",
+  "note": "Static mapped ingredient and direct FoodOn identity sets; no hierarchy, nutrition, or held-out rating in fit."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "reduced_catalog_evaluation_complete",
+  "models": [
+    "1_item_cf",
+    "3_explicit_paths",
+    "4_rotate_primary",
+    "4_rotate_hierarchy"
+  ],
+  "k": [
+    10,
+    50
+  ],
+  "users": 4000,
+  "catalog_recipes": 75872,
+  "removed_test_targets": 373,
+  "removed_positive_test_targets": 367,
+  "positive_test_users": 4000,
+  "rank_sha256": {
+    "1_item_cf": "065968a4a3f6ab4271f013b550532fda9ba6d7307650ef21f877d7f36187fd2a",
+    "3_explicit_paths": "3902db31d5f3901650c6c38392320395094ed52ef292fd3d604e8d67907a5bef",
+    "4_rotate_primary": "9c243ce9f57d8a68636c26eb9d14079c44ac21a91f204233fb3db14e1ceeed80",
+    "4_rotate_hierarchy": "f9b5538e9c850dcb4a53980c2b3c858ce97a88248029396abdbee9bb59b65d5a"
+  },
+  "selection_sha256": "0d543ccdb9a23457035008447160a5edfce1e89e763f4372f8b149e5147f2a9d",
+  "per_user_sha256": "36011af8626f28326157a1ec9e2c4e89e4e10dc10f18b6fc6cc5255b419bc09b",
+  "aggregate_sha256": "5ba3ebc973f36aec40b2817c51a922b2ee26dd486df82074ad63d90de30c762d",
+  "exposure_sha256": "645c840142b2c76dc1bcd7135bba5c36ff66c57811edb3275005d7a0486dcd0a",
+  "created_utc": "2026-11-18T10:53:54.751293+00:00"
+}

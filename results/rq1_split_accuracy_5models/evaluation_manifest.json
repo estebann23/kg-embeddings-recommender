@@ -1,0 +1,30 @@
+{
+  "status": "split_test_accuracy_complete",
+  "models": [
+    "interaction_only_cf",
+    "weighted_graph_paths",
+    "semantic_mf",
+    "rotate_primary",
+    "rotate_foodon_taxonomy"
+  ],
+  "populations": [
+    "random_50",
+    "semantic_50",
+    "exact_ingredient",
+    "direct_foodon_only",
+    "foodon_parent_only",
+    "no_observed_overlap",
+    "insufficient_ingredient_mapping"
+  ],
+  "k": [
+    10,
+    50
+  ],
+  "source_test_reviews": 32000,
+  "aggregate_rows": 35,
+  "per_user_rows": 72805,
+  "preflight_sha256": "c987572104821d9c59a572327452c881327062f6e86b2f6c69e5972b92f0bd16",
+  "aggregate_sha256": "1cef49a4265e28b60509d65de781c589538d66dd66ffa41b894c2ad9b76f6d6b",
+  "per_user_sha256": "95604c00455041be18ac36ae042f2ac894ac4eb80ccd2f6c5cd013b36d5a755c",
+  "created_utc": "2026-11-25T14:54:13.421323+00:00"
+}

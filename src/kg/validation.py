@@ -1,9 +1,10 @@
-"""Validate operational graph semantics against the unchanged RDF/SHACL layer."""
+# Validate all the operational graph semantics against the RDF/SHACL layer
+
 from rdflib import Graph, Literal, URIRef
 from rdflib.namespace import DCTERMS, RDF, RDFS, XSD
 
 from src.kg.models import GraphData
-from src.kg.rdf_loader import extract_graph
+from src.kg.rdf_loader import NUTRIENT_PREDICATES, extract_graph
 from src.kg.semantics import FP, relation_definitions
 
 
@@ -21,6 +22,9 @@ def to_rdf(data: GraphData) -> Graph:
             graph.add((subject, RDFS.label, Literal(name, lang=language or None, datatype=URIRef(datatype) if datatype and not language else None)))
         if "composition_complete" in entity.properties:
             graph.add((subject, FP.compositionComplete, Literal(entity.properties["composition_complete"], datatype=XSD.boolean)))
+        for predicate, field in NUTRIENT_PREDICATES.items():
+            if field in entity.properties:
+                graph.add((subject, predicate, Literal(str(entity.properties[field]), datatype=XSD.decimal)))
         for source in entity.properties.get("source", []):
             graph.add((subject, DCTERMS.source, Literal(source)))
     for edge in data.relationships:
@@ -38,8 +42,8 @@ def to_rdf(data: GraphData) -> Graph:
                 graph.add((statement, DCTERMS.source, Literal(source)))
             if record.source_text is not None:
                 graph.add((statement, FP.sourceText, Literal(record.source_text)))
-            if record.weight is not None:
-                graph.add((statement, FP.preferenceWeight, Literal(str(record.weight), datatype=XSD.decimal)))
+            if record.rating is not None:
+                graph.add((statement, FP.ratingValue, Literal(record.rating, datatype=XSD.integer)))
     return graph
 
 

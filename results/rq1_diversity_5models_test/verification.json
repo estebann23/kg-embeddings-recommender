@@ -1,0 +1,7 @@
+{
+  "status": "five_model_diversity_verified",
+  "per_user_rows": 40000,
+  "aggregate_rows": 10,
+  "measurable_pairs_recomputed": 15252474,
+  "prior_model_rows_crosschecked": 8
+}

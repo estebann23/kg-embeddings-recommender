@@ -1,0 +1,26 @@
+{
+  "status": "preflight_passed_no_test_rating_access",
+  "dataset_id": "hummus_4000_v1",
+  "conditions": [
+    "1_item_cf",
+    "3_explicit_paths",
+    "4_rotate_primary"
+  ],
+  "ranking_depth": 50,
+  "cohort_users": 4000,
+  "candidate_catalog": 75972,
+  "eligible_candidates_per_user": 75944,
+  "selected_neighbor_n": 5,
+  "selected_beta": 0.5,
+  "rotate_variant": "primary",
+  "rotate_weight_five": 0.5,
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "addendum_sha256": "a50f0b779b386108a8a8f7b8c87db446c30bd4ea6cfe9152d06c6d52e9651bfc",
+  "reviews_sha256": "da64723ba731f26847eed39ee8530b8e6cd4471d4fd3dd613104d4bdd8d79e75",
+  "recipes_sha256": "2bb87aaaa7a87d0bf4a9ee7086073cc97203d85672f880021caa0549b040dc24",
+  "cf_validation_sha256": "18af9a791fa59998ee6f51461f44ed9f629e456c52d12d4462cab466474cdacc",
+  "path_validation_sha256": "769e583c5a8853e0373b39fedbfc25076659e8c9fb161534811f4bafbc41f3c3",
+  "rotate_validation_sha256": "6c38e2f67f9c5831a32a6bb33bb0c450811793a6106da57e61df27e23f433b3f",
+  "rotate_model_sha256": "36caa963b553933958df674b1cb39e1be62f3472d1de918bb99e13fdd1af39c1",
+  "created_utc": "2026-11-18T09:38:17.954627+00:00"
+}

@@ -1,0 +1,9 @@
+condition,metric,users,mean,sum_hits,users_with_hit
+4_rotate_primary,precision_at_10,4000,0.0074500000000000321,298,284
+4_rotate_primary,precision_at_50,4000,0.0051099999999999228,1022,844
+4_rotate_primary,ndcg_at_10,4000,0.009745000105103898,298,284
+4_rotate_primary,ndcg_at_50,4000,0.019771130073534079,1022,844
+4_rotate_hierarchy,precision_at_10,4000,0.0075750000000000305,303,287
+4_rotate_hierarchy,precision_at_50,4000,0.0051449999999999257,1029,838
+4_rotate_hierarchy,ndcg_at_10,4000,0.0098063656701132748,303,287
+4_rotate_hierarchy,ndcg_at_50,4000,0.019786194592983791,1029,838

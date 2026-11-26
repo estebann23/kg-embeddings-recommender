@@ -7,116 +7,81 @@
 
 <https://github.com/estebann23/kg-embeddings-recommender/ontology/food_preferences>
     a owl:Ontology ;
-    dcterms:title "Personal Food Preference vocabulary"@en ;
-    dcterms:description "Minimum domain model from MANUAL.md section 2 and description.md. Hard restrictions take precedence over soft preferences. Missing evidence does not establish compatibility."@en ;
-    dcterms:references <https://www.w3.org/TR/rdf-primer/> ;
-    owl:versionInfo "0.1.0" .
+    dcterms:title "Recipe recommendation vocabulary"@en ;
+    dcterms:description "Recipe-level evidence and separate fictional dietary/allergy scenarios, as specified in description.md."@en ;
+    owl:versionInfo "0.2.0" .
 
-# Domain entities. Instance names use rdfs:label and stable entity IRIs.
-fp:UserProfile a owl:Class ; rdfs:label "User profile"@en ;
-    rdfs:comment "A profile with mandatory restrictions and optional weighted preferences."@en .
-fp:Restaurant a owl:Class ; rdfs:label "Restaurant"@en ;
-    rdfs:comment "An establishment offering dishes; eligible only if at least one dish is confirmed compatible with the profile."@en .
-fp:Dish a owl:Class ; rdfs:label "Dish"@en ;
-    rdfs:comment "A menu item offered by a restaurant, with ingredient and attribute evidence."@en .
+fp:ObservedUser a owl:Class ; rdfs:label "Observed user"@en ;
+    rdfs:comment "A HUMMUS member with recorded user–recipe interactions, not inferred health requirements."@en .
+fp:ScenarioProfile a owl:Class ; rdfs:label "Scenario profile"@en ;
+    rdfs:comment "A fictional, explicitly specified dietary or allergy scenario."@en .
+fp:Recipe a owl:Class ; rdfs:label "Recipe"@en ;
+    rdfs:comment "The item being recommended, with sourced ingredient and nutrition information."@en .
 fp:Ingredient a owl:Class ; rdfs:label "Ingredient"@en ;
-    rdfs:comment "A normalized food ingredient with a stable identifier."@en .
-fp:Cuisine a owl:Class ; rdfs:label "Cuisine"@en ;
-    rdfs:comment "A cuisine category used to describe dishes and profile preferences."@en .
-fp:Taste a owl:Class ; rdfs:label "Taste"@en ;
-    rdfs:comment "A taste attribute used to describe dishes and profile preferences."@en .
+    rdfs:comment "A mapped ingredient identity; an unverified mapping preserves its uncertainty."@en .
+fp:FoodOnConcept a owl:Class ; rdfs:label "FoodOn concept"@en ;
+    rdfs:comment "A FoodOn class retaining the external ontology IRI."@en .
 fp:DietaryPattern a owl:Class ; rdfs:label "Dietary pattern"@en ;
-    rdfs:comment "A dietary pattern whose documented exclusion rules can be required or preferred by a profile."@en .
+    rdfs:comment "An explicit scenario diet with documented exclusion rules."@en .
 fp:Allergen a owl:Class ; rdfs:label "Allergen"@en ;
-    rdfs:comment "An allergen category linked to ingredients and mandatory profile allergies."@en .
-fp:HealthRestriction a owl:Class ; rdfs:label "Health restriction"@en ;
-    rdfs:comment "A mandatory health-related restriction with explicit, evidence-backed exclusions; the vocabulary provides no medical advice."@en .
-fp:HealthGoal a owl:Class ; rdfs:label "Health goal"@en ;
-    rdfs:comment "A health-related objective treated as a preference unless a profile explicitly requires it. Only documented ingredient/allergen exclusions are represented in this minimum model."@en .
+    rdfs:comment "An allergen category used in a documented scenario rule."@en .
 
-# Relationship classification is metadata, not an OWL filtering algorithm.
-fp:constraintKind a owl:AnnotationProperty ; rdfs:label "Constraint kind"@en ;
-    rdfs:comment "Object-property classification: hard, soft, rule, or fact. The shared application constraint engine must enforce the documented semantics."@en .
+fp:constraintKind a owl:AnnotationProperty ; rdfs:label "Constraint kind"@en .
 
-# Profile restrictions and preferences.
-fp:followsDiet a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:DietaryPattern ;
-    fp:constraintKind "soft" ; rdfs:label "Follows diet"@en ;
-    rdfs:comment "Soft dietary preference. Non-matching dishes may receive a lower score but are not excluded by this relationship."@en .
-fp:requiresDiet a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:DietaryPattern ;
+fp:rated a owl:ObjectProperty ; rdfs:domain fp:ObservedUser ; rdfs:range fp:Recipe ;
+    fp:constraintKind "fact" ; rdfs:label "Rated"@en ;
+    rdfs:comment "An observed training review; the rating is on its evidence statement."@en .
+fp:scenarioFor a owl:ObjectProperty ; rdfs:domain fp:ScenarioProfile ; rdfs:range fp:ObservedUser ;
+    fp:constraintKind "fact" ; rdfs:label "Scenario for"@en ;
+    rdfs:comment "Associates a fictional scenario with an observed profile for evaluation; asserts no real diagnosis."@en .
+fp:contains a owl:ObjectProperty ; rdfs:domain fp:Recipe ; rdfs:range fp:Ingredient ;
+    fp:constraintKind "fact" ; rdfs:label "Contains declared ingredient"@en ;
+    rdfs:comment "Declared recipe ingredient with evidence state; it does not establish complete composition."@en .
+fp:mapsToFoodOn a owl:ObjectProperty ; rdfs:domain fp:Ingredient ; rdfs:range fp:FoodOnConcept ;
+    fp:constraintKind "fact" ; rdfs:label "Maps to FoodOn"@en ;
+    rdfs:comment "Sourced FoodKG-to-FoodOn mapping with uncertainty retained."@en .
+fp:foodOnSubClassOf a owl:ObjectProperty ; rdfs:domain fp:FoodOnConcept ; rdfs:range fp:FoodOnConcept ;
+    fp:constraintKind "fact" ; rdfs:label "FoodOn subclass of"@en ;
+    rdfs:comment "A named-class FoodOn rdfs:subClassOf triple, retaining its source."@en .
+fp:requiresDiet a owl:ObjectProperty ; rdfs:domain fp:ScenarioProfile ; rdfs:range fp:DietaryPattern ;
     fp:constraintKind "hard" ; rdfs:label "Requires diet"@en ;
-    rdfs:comment "Mandatory dietary requirement. Confirmed conflicts exclude a dish; unresolved compatibility remains unknown."@en .
-fp:allergicTo a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:Allergen ;
+    rdfs:comment "Explicit scenario requirement, never derived from a HUMMUS rating."@en .
+fp:allergicTo a owl:ObjectProperty ; rdfs:domain fp:ScenarioProfile ; rdfs:range fp:Allergen ;
     fp:constraintKind "hard" ; rdfs:label "Allergic to"@en ;
-    rdfs:comment "Mandatory allergy exclusion through dish-ingredient-allergen evidence. A positive preference cannot override it."@en .
-fp:mustAvoid a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:Ingredient ;
+    rdfs:comment "Explicit fictional allergy constraint."@en .
+fp:mustAvoid a owl:ObjectProperty ; rdfs:domain fp:ScenarioProfile ; rdfs:range fp:Ingredient ;
     fp:constraintKind "hard" ; rdfs:label "Must avoid"@en ;
-    rdfs:comment "Mandatory exclusion of an ingredient, independent of any preference for that ingredient."@en .
-fp:likesIngredient a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:Ingredient ;
-    fp:constraintKind "soft" ; rdfs:label "Likes ingredient"@en ;
-    rdfs:comment "Positive ingredient preference used only when ranking compatible candidates."@en .
-fp:dislikesIngredient a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:Ingredient ;
-    fp:constraintKind "soft" ; rdfs:label "Dislikes ingredient"@en ;
-    rdfs:comment "Negative ingredient preference: a matching ingredient reduces score, not eligibility. Weight is a nonnegative magnitude."@en .
-fp:prefersCuisine a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:Cuisine ;
-    fp:constraintKind "soft" ; rdfs:label "Prefers cuisine"@en ;
-    rdfs:comment "Weighted cuisine preference used only after hard filtering."@en .
-fp:prefersTaste a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:Taste ;
-    fp:constraintKind "soft" ; rdfs:label "Prefers taste"@en ;
-    rdfs:comment "Weighted taste preference used only after hard filtering."@en .
-fp:requiresHealthRestriction a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:HealthRestriction ;
-    fp:constraintKind "hard" ; rdfs:label "Requires health restriction"@en ;
-    rdfs:comment "Activates the health restriction's explicit exclusion rules as hard constraints."@en .
-fp:prefersHealthGoal a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:HealthGoal ;
-    fp:constraintKind "soft" ; rdfs:label "Prefers health goal"@en ;
-    rdfs:comment "Soft health objective; confirmed matches to its documented exclusions can reduce score but cannot exclude candidates."@en .
-fp:requiresHealthGoal a owl:ObjectProperty ; rdfs:domain fp:UserProfile ; rdfs:range fp:HealthGoal ;
-    fp:constraintKind "hard" ; rdfs:label "Requires health goal"@en ;
-    rdfs:comment "Explicitly mandatory health objective. Activates its documented exclusions as hard constraints; goal type alone never implies mandatory status."@en .
-
-# Menu facts. Evidence annotates each relationship, not the entire dish.
-fp:offers a owl:ObjectProperty ; rdfs:domain fp:Restaurant ; rdfs:range fp:Dish ;
-    fp:constraintKind "fact" ; rdfs:label "Offers"@en ;
-    rdfs:comment "Restaurant-to-dish menu association."@en .
-fp:contains a owl:ObjectProperty ; rdfs:domain fp:Dish ; rdfs:range fp:Ingredient ;
-    fp:constraintKind "fact" ; rdfs:label "Contains"@en ;
-    rdfs:comment "Ingredient relationship qualified by a statement evidence state; inferred or possible presence is not confirmed presence."@en .
-fp:hasCuisine a owl:ObjectProperty ; rdfs:domain fp:Dish ; rdfs:range fp:Cuisine ;
-    fp:constraintKind "fact" ; rdfs:label "Has cuisine"@en ;
-    rdfs:comment "Dish cuisine attribute with recorded supporting evidence."@en .
-fp:hasTaste a owl:ObjectProperty ; rdfs:domain fp:Dish ; rdfs:range fp:Taste ;
-    fp:constraintKind "fact" ; rdfs:label "Has taste"@en ;
-    rdfs:comment "Dish taste attribute with recorded supporting evidence."@en .
+    rdfs:comment "Explicit ingredient exclusion in a scenario."@en .
 fp:hasAllergen a owl:ObjectProperty ; rdfs:domain fp:Ingredient ; rdfs:range fp:Allergen ;
     fp:constraintKind "fact" ; rdfs:label "Has allergen"@en ;
-    rdfs:comment "Ingredient-to-allergen association qualified by evidence. A missing association is not evidence of allergen absence."@en .
-
-# Rule subjects may be any of the three rule-bearing domain classes.
-# owl:unionOf avoids the intersection implied by multiple rdfs:domain values.
-fp:excludesIngredient a owl:ObjectProperty ;
-    rdfs:domain [ a owl:Class ; owl:unionOf (fp:DietaryPattern fp:HealthRestriction fp:HealthGoal) ] ;
-    rdfs:range fp:Ingredient ; fp:constraintKind "rule" ; rdfs:label "Excludes ingredient"@en ;
-    rdfs:comment "Documented ingredient exclusion of a diet, restriction, or goal. Hardness is determined by the profile relationship activating the rule."@en .
-fp:excludesAllergen a owl:ObjectProperty ;
-    rdfs:domain [ a owl:Class ; owl:unionOf (fp:DietaryPattern fp:HealthRestriction fp:HealthGoal) ] ;
-    rdfs:range fp:Allergen ; fp:constraintKind "rule" ; rdfs:label "Excludes allergen"@en ;
-    rdfs:comment "Documented allergen exclusion of a diet, restriction, or goal. A required rule triggers the same allergy-evidence checks as allergicTo."@en .
-fp:compatibleWithDiet a owl:ObjectProperty ; rdfs:domain fp:Dish ; rdfs:range fp:DietaryPattern ;
+    rdfs:comment "Documented ingredient-to-allergen rule, not supplied by a FoodOn mapping alone."@en .
+fp:excludesIngredient a owl:ObjectProperty ; rdfs:domain fp:DietaryPattern ; rdfs:range fp:Ingredient ;
+    fp:constraintKind "rule" ; rdfs:label "Excludes ingredient"@en ;
+    rdfs:comment "Documented diet exclusion rule."@en .
+fp:excludesAllergen a owl:ObjectProperty ; rdfs:domain fp:DietaryPattern ; rdfs:range fp:Allergen ;
+    fp:constraintKind "rule" ; rdfs:label "Excludes allergen"@en ;
+    rdfs:comment "Documented diet exclusion rule."@en .
+fp:compatibleWithDiet a owl:ObjectProperty ; rdfs:domain fp:Recipe ; rdfs:range fp:DietaryPattern ;
     fp:constraintKind "fact" ; rdfs:label "Compatible with diet"@en ;
-    rdfs:comment "Evidence-backed dietary compatibility assessment. Only confirmed, non-conflicting evidence can support mandatory-diet eligibility."@en .
-fp:incompatibleWithDiet a owl:ObjectProperty ; rdfs:domain fp:Dish ; rdfs:range fp:DietaryPattern ;
+    rdfs:comment "Independent checked compatibility assessment, not inferred from missing edges."@en .
+fp:incompatibleWithDiet a owl:ObjectProperty ; rdfs:domain fp:Recipe ; rdfs:range fp:DietaryPattern ;
     fp:constraintKind "fact" ; rdfs:label "Incompatible with diet"@en ;
-    rdfs:comment "Evidence-backed dietary conflict. A confirmed conflict overrides any positive dietary claim."@en .
+    rdfs:comment "Evidence-backed recipe–diet conflict."@en .
 
-# Metadata on standard rdf:Statement records (subject, predicate, object).
-fp:preferenceWeight a owl:DatatypeProperty ; rdfs:domain rdf:Statement ; rdfs:range xsd:decimal ;
-    rdfs:label "Preference weight"@en ;
-    rdfs:comment "Required magnitude in [0,1] on each soft-preference statement. No weight is allowed on hard restrictions. The predicate determines positive or negative scoring direction."@en .
-fp:evidenceState a owl:DatatypeProperty ; rdfs:domain rdf:Statement ; rdfs:range xsd:string ;
-    rdfs:label "Evidence state"@en ;
-    rdfs:comment "Exactly one of CONFIRMED, INFERRED, MAY_CONTAIN, UNKNOWN. Describes this particular assertion; UNKNOWN does not assert absence."@en .
-fp:sourceText a owl:DatatypeProperty ; rdfs:domain rdf:Statement ; rdfs:range xsd:string ;
-    rdfs:label "Source text"@en ;
-    rdfs:comment "Optional original text supporting an assertion; source identifiers/references use dcterms:source on the same statement."@en .
-fp:compositionComplete a owl:DatatypeProperty ; rdfs:domain fp:Dish ; rdfs:range xsd:boolean ;
-    rdfs:label "Composition complete"@en ;
-    rdfs:comment "True only when the ingredient list has been explicitly verified complete. False or absent means incomplete/unknown; true alone does not establish allergen or dietary safety."@en .
+# A direct object-property triple is accompanied by a named rdf:Statement.
+fp:evidenceState a owl:DatatypeProperty ; rdfs:domain rdf:Statement ; rdfs:range xsd:string .
+fp:sourceText a owl:DatatypeProperty ; rdfs:domain rdf:Statement ; rdfs:range xsd:string .
+fp:ratingValue a owl:DatatypeProperty ; rdfs:domain rdf:Statement ; rdfs:range xsd:integer ;
+    rdfs:comment "Observed rating 1–5, present only on rated statements."@en .
+fp:compositionComplete a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:boolean ;
+    rdfs:comment "True only after explicit verification; absence does not certify safety."@en .
+fp:servingSizeGrams a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .
+fp:calories a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .
+fp:totalFatGrams a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .
+fp:saturatedFatGrams a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .
+fp:cholesterolMilligrams a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .
+fp:sodiumMilligrams a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .
+fp:carbohydrateGrams a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .
+fp:dietaryFiberGrams a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .
+fp:sugarsGrams a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .
+fp:proteinGrams a owl:DatatypeProperty ; rdfs:domain fp:Recipe ; rdfs:range xsd:decimal .

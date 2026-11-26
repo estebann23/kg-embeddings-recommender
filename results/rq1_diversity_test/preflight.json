@@ -1,0 +1,29 @@
+{
+  "status": "diversity_preflight_passed",
+  "dataset_id": "hummus_4000_v1",
+  "models": [
+    "1_item_cf",
+    "3_explicit_paths",
+    "4_rotate_primary",
+    "4_rotate_hierarchy"
+  ],
+  "k": [
+    10,
+    50
+  ],
+  "users": 4000,
+  "catalog_recipes": 75972,
+  "recipes_with_mapped_ingredients": 65984,
+  "mapped_ingredient_incidences": 586292,
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "config_sha256": "98e97b1432d052d966c41383c1a6f54913232d093cceba365657db8e3087edf8",
+  "ingredient_source_sha256": "ac2f1208c18a947163f37b788995d46326eaa468b777022ff50811a6a2ecac35",
+  "recipes_sha256": "2bb87aaaa7a87d0bf4a9ee7086073cc97203d85672f880021caa0549b040dc24",
+  "ranking_sha256": {
+    "1_item_cf": "ac26a8f40da0547bc06dcb74c4030e9f641965bd6b6861249db51fb469277a33",
+    "3_explicit_paths": "eb9d6bbd77be3987743d1a050e6dfdab446c66815a74bc6446dce3bc250769ac",
+    "4_rotate_primary": "e7e0ca9585b7469df0625ea2baf8d8c7db509935cd269613fe093935867e8e89",
+    "4_rotate_hierarchy": "288b388f630a7bcc1445970ec510d8395be1bc66dcb5731ae24f68563afcafef"
+  },
+  "created_utc": "2026-11-18T10:22:21.520271+00:00"
+}

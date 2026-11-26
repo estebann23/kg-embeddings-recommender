@@ -1,0 +1,18 @@
+{
+  "status": "training_only_selection_passed",
+  "users": 4000,
+  "original_catalog": 75972,
+  "reduced_catalog": 75872,
+  "selected_count": 100,
+  "selection_sha256": "0d543ccdb9a23457035008447160a5edfce1e89e763f4372f8b149e5147f2a9d",
+  "config_sha256": "b7099db5b103c56edb651d981459c4c2fb152aa4d1d884d9c395d910731226b8",
+  "reviews_sha256": "da64723ba731f26847eed39ee8530b8e6cd4471d4fd3dd613104d4bdd8d79e75",
+  "recipes_sha256": "2bb87aaaa7a87d0bf4a9ee7086073cc97203d85672f880021caa0549b040dc24",
+  "ingredient_source_sha256": "ac2f1208c18a947163f37b788995d46326eaa468b777022ff50811a6a2ecac35",
+  "contract_lock_sha256": "f82c75fc3457483a3a1983225be894b0b759d562ae2cc276c2ed24f58a81cdea",
+  "model_sha256": {
+    "4_rotate_primary": "36caa963b553933958df674b1cb39e1be62f3472d1de918bb99e13fdd1af39c1",
+    "4_rotate_hierarchy": "4ed61dce63d04f4e0ce284b1bfa60f51b88986b1e06f396ea23310ec4906c771"
+  },
+  "created_utc": "2026-11-18T10:44:03.089890+00:00"
+}
